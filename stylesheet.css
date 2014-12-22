@@ -1,0 +1,2107 @@
+/*---------------------------
+Version 1.0 - Politics
+Made by /u/qtx
+Snoo by /u/nogbog & /u/TheMCToga
+Special thanks to /u/gavin19
+Released: December 2014
+Details: Politics stylesheet
+---------------------------*/
+
+body { background: #F5F5F5; }
+
+body > .content { margin: 43px 5px 0px 0; }
+
+#sr-header-area {
+	background-color: rgba(0,0,0,0);
+	border: 0px solid;
+	transition: all 0.15s ease;
+	height: 28px; line-height: 28px; }
+
+#sr-header-area .separator { visibility: hidden; }
+.srSep { display: none; }
+#sr-header-area .width-clip { right: 300px; }
+#sr-header-area .sr-list { margin-right: 48px; }
+#sr-header-area .sr-bar a, #sr-more-link, #sr-header-area .separator, #sr-header-area .dropdown.srdrop .selected {
+	background-color: transparent;
+	color: rgba(255,255,255,0.5);
+	transition: all 0.15s ease; }
+
+#sr-header-area:hover a { color: #fff!important; }
+
+#sr-header-area:hover .sr-bar a, 
+#sr-header-area:hover #sr-more-link, 
+#sr-header-area:hover .seperator,
+#sr-header-area:hover .dropdown.srdrop .selected { color: #444; }
+
+#sr-header-area .sr-bar a:hover, #sr-more-link:hover, #sr-header-area .dropdown.srdrop .selected:hover {
+	background-color: transparent;
+	border: 0px solid; color: #fff;
+	transition: all 0.15s ease; }
+
+#sr-header-area .dropdown.srdrop .selected, .res #sr-header-area #srDropdownContainer a {
+	margin: 0px;
+	padding: 0px;
+	background-image: none;
+	font-size: 0px!important; }
+
+#sr-header-area .dropdown.srdrop .selected:after, .res #sr-header-area #srDropdownContainer a:after {
+	position: relative;
+	top: -1px;
+	padding-right: 6px;
+	content: "≡";
+	font-size: 18px; }
+
+#srDropdown, #srDropdownContainer { height: 28px; }
+
+#sr-header-area:hover .drop-choices a { color: #000!important; }
+#sr-header-area:hover .dropdown.srdrop .selected { color: #fff!important; }
+#sr-header-area .drop-choices.srdrop { margin-left: 0; border-left: 0; }
+
+.res #srList { padding: 3px; top: 28px; left: 0; border: none; background-color: #FFF; }
+.res #srList tr { border-bottom:none; }
+.res #srList tr:hover{ background-color:#eee; }
+.res #srList td a { width: 100%; display: block; color: #808080!important; text-transform: uppercase; }
+.res #srList td a:hover { color: #333!important; }
+
+#header { 
+	background: #F5F5F5;
+	background: url(%%politics-header%%) no-repeat center center/cover;
+	border-bottom: 1px solid #b1b1b1;
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.11);
+	-moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,.11);
+	-ms-box-shadow: 0 2px 2px 0 rgba(0,0,0,.11);
+	-o-box-shadow: 0 2px 2px 0 rgba(0,0,0,.11);
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.11); }
+
+#header-img-a { position: relative; }
+#header-img-a:hover:after {
+	position: absolute;
+	white-space: normal;
+	display: inline-block;
+	z-index: 1000;
+	width: 100px;
+	border: 1px solid #fff;
+	background: transparent;
+	content: "return to reddit";
+	text-align: center;
+	font-size: 8px;
+	text-transform: uppercase;
+	margin-top: 2px;
+	line-height: 14px;
+	color: #fff;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px; }
+
+#header-bottom-left { height: 100px; }
+
+#header:after {
+	content: "";
+	background: rgb(3,36,84);
+	background: -moz-linear-gradient(top,  rgba(26,85,141,1) 0%, rgba(3,36,84,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(26,85,141,1) 0%,rgba(3,36,84,1) 100%);
+	background: -o-linear-gradient(top,  rgba(26,85,141,1) 0%,rgba(3,36,84,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(26,85,141,1) 0%,rgba(3,36,84,1) 100%);
+	background: linear-gradient(to bottom,  rgba(26,85,141,1) 0%,rgba(3,36,84,1) 100%);
+	border-top: 1px solid #2c4d81;
+	padding-left: 15px;
+	height: 32px;
+	margin : 0;
+	display: block;
+	font-family: sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #CCC; }
+
+#header-bottom-left ul.tabmenu {
+	position: absolute;
+	display: block;
+	font-family: cantarell,Arial,sans-serif;
+	font-weight: 700;
+	height: 32px;
+	top: 129px;
+	left: 0;
+	right: 0;
+	margin: 0;
+	text-align: center; }
+
+#header-bottom-left ul.tabmenu li { margin: 0; }
+#header-bottom-left ul.tabmenu li a {
+	padding: 10px 15px;
+	font-size: 10px;
+	line-height: 32px;
+	text-transform: uppercase;
+	color: rgba(255,255,255,.5);
+	letter-spacing: 1px;
+	background: rgb(3,36,84);
+	background: -moz-linear-gradient(top,  rgba(26,85,141,1) 0%, rgba(3,36,84,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(26,85,141,1) 0%,rgba(3,36,84,1) 100%);
+	background: -o-linear-gradient(top,  rgba(26,85,141,1) 0%,rgba(3,36,84,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(26,85,141,1) 0%,rgba(3,36,84,1) 100%);
+	background: linear-gradient(to bottom,  rgba(26,85,141,1) 0%,rgba(3,36,84,1) 100%); }
+
+#header-bottom-left ul.tabmenu li a:hover { background: #31558f; color: #fff; }
+
+#header-bottom-left ul.tabmenu li.selected a {
+	color: #fff!important;
+	text-decoration: underline;
+	background-color: #31558f;
+	border: 0; }
+
+#header-bottom-right, .res #header-bottom-right {
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	width: auto;
+	max-width: 300px;
+	height: 28px;
+	line-height: 28px;
+	background-color: transparent;
+	font-size: 9px;
+	padding: 0; }
+
+#header-bottom-right a, #header-bottom-right .user, #header-bottom-right .user .userkarma { color: rgba(255,255,255,0.5); border-bottom: 0; }
+#header-bottom-right:hover a, #header-bottom-right:hover .user .userkarma { color: #fff; }
+#header-bottom-right .separator, .res #header-bottom-right .separator { display: none; }
+
+
+.res #RESShortcutsViewport, .res #RESShortcutsEditContainer { margin-right: 312px; }
+.res #srLeftContainer, .res #RESShortcutsViewport, .res #RESShortcutsEditContainer  { max-height: 28px; line-height: 28px; }
+
+.res #RESShortcutsEditContainer { height: 28px; background-color: rgba(0,0,0,0.1)!important; max-width: 2px!important; }
+#RESShortcutsSort, #RESShortcutsRight, #RESShortcutsLeft, #RESShortcutsAdd, #RESShortcutsTrash { display: none; font-size: 10px!important; background-color: transparent!important;  line-height: 26px; }
+
+.res #userbarToggle {
+	min-height: 28px;
+	left: -5px;
+	width: 16px;
+	padding-right: 3px;
+	color: #a1bcd6;
+	background-color: transparent;
+	border-right: 0;
+	line-height: 26px; }
+
+.res #mail { min-width: 21px !important; }
+
+#mail.nohavemail { background:url(%%politics-spritesheet%%) no-repeat -241px -110px; width: 21px; opacity: 0.7; }
+#mail.havemail { background: url(%%politics-spritesheet%%) no-repeat -176px -23px; width: 21px; }
+#modmail.nohavemail { background: url(%%politics-spritesheet%%) no-repeat -241px -136px; width: 21px; }
+
+#modmail.havemail { background: url(%%politics-spritesheet%%) -241px -94px no-repeat; width: 23px; }
+
+.res .gearIcon { background: url(%%politics-spritesheet%%) -71px 0 no-repeat; }
+#RESMainGearOverlay { margin-left: 5px; width: 21px!important; }
+.res .gearIcon { left: 1px !important; }
+
+#RESSubredditGroupDropdown { padding: 5px 20px!important; top: 17px!important; background-color: #fff!important; border-left: 1px solid #ddd!important; border-right: 1px solid #ddd!important; border-bottom: 1px solid #ddd!important; }
+#RESSubredditGroupDropdown li:hover { background: #515e8c!important; }
+#RESSubredditGroupDropdown .RESShortcutsEditButtons .edit { margin-left: -10px!important; }
+#RESMainGearOverlay, .RESDropdownList { border: 0!important; background-color: #E3F2FD!important; border-radius: 3!important; }
+.RESDropdownList { right: 0!important; width: 260px!important; border-left: 1px solid #BBDEFB!important; border-top: 1px solid #BBDEFB!important; }
+.RESDropdownList li { border-bottom: 1px solid #BBDEFB!important; color: #444!important; }
+.RESDropdownList a, .RESDropdownList a:visited { color: #444!important; }
+#RESSearchMenuItem { border: 0!important; border-radius: 0!important; }
+.toggleButton .toggleOn, .toggleButton .toggleOff { border: 1px solid #677585!important; border-radius: 0!important; }
+.moduleToggle:not(.enabled) .toggleOff, .toggleButton:not(.enabled) .toggleOff { font-weight: normal!important; }
+
+#openRESPrefs { margin-left: 5px; }
+
+#header-bottom-right a.pref-lang {
+	background: url(%%politics-spritesheet%%) -241px -120px no-repeat;
+	width: 21px;
+	height: 16px;
+	display: inline-block;
+	text-indent: -9999px;
+	top: 6px;
+	margin: 0;
+	position: relative; }
+
+.loggedin .logout a {
+	background: url(%%politics-spritesheet%%) -217px -23px no-repeat;
+	width: 21px;
+	height: 16px;
+	display: inline-block;
+	text-indent: -9999px;
+	top: 5px;
+	margin: 0;
+	position: relative; }
+
+#header .redditname a {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(%%politics-spritesheet%%) 0 -46px no-repeat;
+	height: 100px;
+	width: 241px;
+	text-indent: -9999px; }
+
+#header .redditname a:hover { background: url(%%politics-spritesheet%%) 0 -146px no-repeat; }
+
+.sitetable { margin-left: 20px; }
+
+.linklisting .link {
+	margin-bottom: 5px;
+	padding: 10px 0;
+	background: rgba(255,255,255,1);
+	border-bottom: 1px solid #dcdcdc;
+	-moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+	-ms-box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+	-o-box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.05); }
+
+.linklisting .link .rank { visibility: hidden; display: none; }
+
+.linklisting .link .domain { color: #fff; }
+.linklisting .link .domain a { color: #888; }
+
+.linklisting .link .entry {
+	font-family: cantarell,Arial,sans-serif;
+	padding-left: 10px;
+	margin-left: 0;
+	border-left: 1px solid #dcdcdc; }
+
+.linklisting .link .midcol {
+	position: relative;
+	margin: 0;
+	min-width: 40px;
+	overflow: visible;
+	margin-left: 120px; }
+
+.linklisting .link .score,
+.organic-listing .link.promotedlink .score {
+	position: absolute;
+	top: 0;
+	min-height: 45px;
+	line-height: 45px;
+	margin-left: -120px;
+	min-width: 40px;
+	color: #d6d6d6;
+	text-indent: -1px;
+	font-size: 14px;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	border-right: solid 1px #dcdcdc; }
+
+.linklisting .link .arrow,
+.organic-listing .link.promotedlink .arrow {
+	margin: 0 10px;
+	height: 20px;
+	width: 20px; }
+
+.linklisting .link .arrow.up,
+.organic-listing .link.promotedlink .arrow.up { background: url(%%politics-spritesheet%%) 0 0 no-repeat #b7bed6; }
+.linklisting .link .arrow.upmod,
+.organic-listing .link.promotedlink .arrow.upmod { background: url(%%politics-spritesheet%%) 0 0 no-repeat #C4434C; }
+.linklisting .link .arrow.down,
+.organic-listing .link.promotedlink .arrow.down {
+	background: url(%%politics-spritesheet%%) 0 0 no-repeat #b7bed6;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg); }
+
+.linklisting .link .arrow.downmod,
+.organic-listing .link.promotedlink .arrow.downmod {
+	background: url(%%politics-spritesheet%%) 0 0 no-repeat #606FA3;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg); }
+
+.linklisting .link .arrow.up, .linklisting .link .arrow.upmod,
+.organic-listing .link.promotedlink .arrow.up, .organic-listing .link.promotedlink .arrow.upmod  { margin-bottom: 5px; }
+
+.comments-page .commentarea .arrow.up { background: url(%%politics-spritesheet%%) -116px 0 no-repeat; }
+.comments-page .commentarea .arrow.upmod { background: url(%%politics-spritesheet%%) -130px 0 no-repeat; }
+.comments-page .commentarea .arrow.down { background: url(%%politics-spritesheet%%) -87px 0 no-repeat; }
+.comments-page .commentarea .arrow.downmod { background: url(%%politics-spritesheet%%) -102px 0 no-repeat; }
+
+.link .entry .tagline time:not(.edited-timestamp)::before { content: ""; vertical-align: middle; }
+.link .entry .tagline { font-size: 0px !important; }
+.link .entry .tagline time:not(.edited-timestamp)::after { content: " by "; font-size: x-small; }
+.link .entry .tagline time.edited-timestamp[title]:after { content: " (" attr(title) ")"; font-size: 90%; }
+.link .entry .tagline time, .entry .tagline a, .tagline span { font-size: x-small; }
+
+.linklisting .thing ul.flat-list.buttons li.first a { color: #2a3f4d; font-weight: bold; }
+
+.res .RES-keyNav-activeElement { background-color: transparent!important; border-right: 2px solid #586698; }
+.res .RES-keyNav-activeElement, .res .commentarea .RES-keyNav-activeElement .md, .res .commentarea .RES-keyNav-activeElement.entry .noncollapsed { outline: none; }
+
+.link.last-clicked { border: 0; }
+
+.thumbnail { position: absolute; left: 60px; margin: 0; }
+
+.link a.thumbnail { background-repeat: no-repeat; width: 90px; height: 45px; }
+
+.link a.thumbnail img { width: 60px; padding-left: 15px; }
+.link .thumbnail.default, .link .thumbnail.self { background: url(%%politics-spritesheet%%) -265px -45px no-repeat!important; }
+
+/* first resize logo to 60 x 45px then add 15px transparent padding on each side so it becomes a 90 x 45px image */
+
+.link a.thumbnail[href*="aljazeera.com"] {background:url(%%politics-media%%) -450px 0!important; }
+.link a.thumbnail[href*="abcnews.go"] {background:url(%%politics-media%%) -90px 0!important; }
+.link a.thumbnail[href*="ap.org"] {background:url(%%politics-media%%) 0 -45px!important; }
+.link a.thumbnail[href*="theatlantic"] {background:url(%%politics-media%%) 0 -630px!important; }
+.link a.thumbnail[href*="ahram.org.eg"] {background:url(%%politics-media%%) -270px 0!important; }
+.link a.thumbnail[href*="alarabiya.net"] {background:url(%%politics-media%%) -360px 0!important; }
+.link a.thumbnail[href*="bbc.co.uk"] {background:url(%%politics-media%%) -270px -45px!important; }
+.link a.thumbnail[href*="bloomberg.com"] {background:url(%%politics-media%%) -450px -45px!important; }
+.link a.thumbnail[href*="boston.com"] {background:url(%%politics-media%%) -540px -45px!important; }
+.link a.thumbnail[href*="buffalonews.com"] {background:url(%%politics-media%%) -270px -630px!important; }
+.link a.thumbnail[href*="bostonherald.com"] {background:url(%%politics-media%%) -630px -45px!important; }
+.link a.thumbnail[href*="cbc.ca"] {background:url(%%politics-media%%) -540px -90px!important; }
+.link a.thumbnail[href*="cbsnews.com"] {background:url(%%politics-media%%) -630px -90px!important; }
+.link a.thumbnail[href*="csmonitor.com"] {background:url(%%politics-media%%) -90px -180px!important; }
+.link a.thumbnail[href*="cnn.com"] {background:url(%%politics-media%%) -450px -135px!important; }
+.link a.thumbnail[href*="suntimes.com"] {background:url(%%politics-media%%) -360px -585px!important; }
+.link a.thumbnail[href*="chicagotribune.com"] {background:url(%%politics-media%%) -90px -135px!important; }
+.link a.thumbnail[href*="chron.com"] {background:url(%%politics-media%%) -360px -630px!important; }
+.link a.thumbnail[href*="dw.de"] {background:url(%%politics-media%%) -540px -180px!important; }
+.link a.thumbnail[href*="freep.com"] {background:url(%%politics-media%%) -450px -180px!important; }
+.link a.thumbnail[href*="thediplomat.com"] {background:url(%%politics-media%%) 0 -675px!important; }
+.link a.thumbnail[href*="dailynews.com"] {background:url(%%politics-media%%) -360px -270px!important; }
+.link a.thumbnail[href*="dailystar.com"] {background:url(%%politics-media%%) -630px -630px!important; }
+.link a.thumbnail[href*="economist.com"] {background:url(%%politics-media%%) -90px -675px!important; }
+.link a.thumbnail[href*="elpais.com"] {background:url(%%politics-media%%) 0 -225px!important; }
+.link a.thumbnail[href*="forbes.com"] {background:url(%%politics-media%%) -180px -225px!important; }
+.link a.thumbnail[href*="foreignpolicy.com"] {background:url(%%politics-media%%) -270px -225px!important; }
+.link a.thumbnail[href*="france24.com"] {background:url(%%politics-media%%) -450px -225px!important; }
+.link a.thumbnail[href*="gazette.com"] {background:url(%%politics-media%%) -630px -225px!important; }
+.link a.thumbnail[href*="theguardian.com"] {background:url(%%politics-media%%) -270px -675px!important; }
+.link a.thumbnail[href*="globalpost.com"] {background:url(%%politics-media%%) 0 -270px!important; }
+.link a.thumbnail[href*="theglobeandmail.com"] {background:url(%%politics-media%%) -180px -675px!important; }
+.link a.thumbnail[href*="haaretz.com"] {background:url(%%politics-media%%) -270px -270px!important; }
+.link a.thumbnail[href*="huffingtonpost.com"] {background:url(%%politics-media%%) -450px -675px!important; }
+.link a.thumbnail[href*="independent.co.uk"] {background:url(%%politics-media%%) -540px -675px!important; }
+.link a.thumbnail[href*="latimes.com"] {background:url(%%politics-media%%) -540px -270px!important; }
+.link a.thumbnail[href*="motherjones.com"] {background:url(%%politics-media%%) -450px -315px!important; }
+.link a.thumbnail[href*="msnbc.com"] {background:url(%%politics-media%%) -630px -315px!important; }
+.link a.thumbnail[href*="mercurynews.com"] {background:url(%%politics-media%%) -90px -315px!important; }
+.link a.thumbnail[href*="miamiherald.com"] {background:url(%%politics-media%%) -180px -315px!important; }
+.link a.thumbnail[href*="mondediplo.com"] {background:url(%%politics-media%%) -450px -270px!important; }
+.link a.thumbnail[href*="newsday.com"] {background:url(%%politics-media%%) -630px -360px!important; }
+.link a.thumbnail[href*="nationalpost.com"] {background:url(%%politics-media%%) -90px -360px!important; }
+.link a.thumbnail[href*="npr.org"] {background:url(%%politics-media%%) -630px -405px!important; }
+.link a.thumbnail[href*="newyorker.com"] {background:url(%%politics-media%%) -90px -720px!important; }
+.link a.thumbnail[href*="newstatesman.com"] {background:url(%%politics-media%%) -180px -405px!important; }
+.link a.thumbnail[href*="nbcnews.com"] {background:url(%%politics-media%%) -270px -360px!important; }
+.link a.thumbnail[href*="nytimes.com"] {background:url(%%politics-media%%) 0 -450px!important; }
+.link a.thumbnail[href*="thenation.com"] {background:url(%%politics-media%%) -630px -675px!important; }
+.link a.thumbnail[href*="news.com.au"] {background:url(%%politics-media%%) -540px -360px!important; }
+.link a.thumbnail[href*="post-gazette.com"] {background:url(%%politics-media%%) -90px -495px!important; }
+.link a.thumbnail[href*="politico.com"] {background:url(%%politics-media%%) -540px -450px!important; }
+.link a.thumbnail[href*="politicususa.com"] {background:url(%%politics-media%%) -630px -450px!important; }
+.link a.thumbnail[href*="pbs.org"] {background:url(%%politics-media%%) -180px -450px!important; }
+.link a.thumbnail[href*="philly.com"] {background:url(%%politics-media%%) -360px -450px!important; }
+.link a.thumbnail[href*="pri.org"] {background:url(%%politics-media%%) -180px -495px!important; }
+.link a.thumbnail[href*="reuters.com"] {background:url(%%politics-media%%) -90px -540px!important; }
+.link a.thumbnail[href*="spiegel.de"] {background:url(%%politics-media%%) -360px -180px!important; }
+.link a.thumbnail[href*="scientificamerican.com"] {background:url(%%politics-media%%) -450px -540px!important; }
+.link a.thumbnail[href*="seattlepi.com"] {background:url(%%politics-media%%) -540px -540px!important; }
+.link a.thumbnail[href*="seattletimes.com"] {background:url(%%politics-media%%) -630px -540px!important; }
+.link a.thumbnail[href*="sfgate.com"] {background:url(%%politics-media%%) 0 -585px!important; }
+.link a.thumbnail[href*="slate.com"] {background:url(%%politics-media%%) -90px -585px!important; }
+.link a.thumbnail[href*="stltoday.com"] {background:url(%%politics-media%%) -180px -585px!important; }
+.link a.thumbnail[href*="thestar.com"] {background:url(%%politics-media%%) -180px -720px!important; }
+.link a.thumbnail[href*="thinkprogress.org"] {background:url(%%politics-media%%) -450px -720px!important; }
+.link a.thumbnail[href*="talkingpointsmemo.com"] {background:url(%%politics-media%%) -630px -720px!important; }
+.link a.thumbnail[href*="telegraph.co.uk"] {background:url(%%politics-media%%) -270px -720px!important; }
+.link a.thumbnail[href*="time.com"] {background:url(%%politics-media%%) -540px -720px!important; }
+.link a.thumbnail[href*="theaustralian.com.au"] {background:url(%%politics-media%%) -90px -630px!important; }
+.link a.thumbnail[href*="upi.com"] {background:url(%%politics-media%%) -720px -45px!important; }
+.link a.thumbnail[href*="news.yahoo.com"] {background:url(%%politics-media%%) -90px -765px!important; }
+.link a.thumbnail[href*="washingtonpost.com"] {background:url(%%politics-media%%) -720px -450px!important; }
+.link a.thumbnail[href*="washingtontimes.com"] {background:url(%%politics-media%%) -720px -495px!important; }
+.link a.thumbnail[href*="wsj.com"] {background:url(%%politics-media%%) -720px -630px!important; }
+.link a.thumbnail[href*="rollingstone.com"] {background:url(%%politics-media%%) -360px -540px!important; }
+.link a.thumbnail[href*="thedailybeast.com"] {background:url(%%politics-media%%) -540px -630px!important; }
+.link a.thumbnail[href*="businessinsider.com"] {background:url(%%politics-media%%) -270px -90px!important; }
+.link a.thumbnail[href*="usatoday.com"] {background:url(%%politics-media%%) -720px -90px!important; }
+.link a.thumbnail[href*="marketwatch.com"] {background:url(%%politics-media%%) -630px -270px!important; }
+.link a.thumbnail[href*="newsworks.org"] {background:url(%%politics-media%%) -360px -405px!important; }
+.link a.thumbnail[href*="charlotteobserver.com"] {background:url(%%politics-media%%) 0 -135px!important; }
+.link a.thumbnail[href*="nationaljournal.com"] {background:url(%%politics-media%%) 0 -360px!important; }
+.link a.thumbnail[href*="politifact.com"] {background:url(%%politics-media%%) 0 -495px!important; }
+.link a.thumbnail[href*="dailymail.co.uk"] {background:url(%%politics-media%%) -180px -180px!important; }
+.link a.thumbnail[href*="ringoffireradio.com"] {background:url(%%politics-media%%) -180px -540px!important; }
+.link a.thumbnail[href*="billmoyers.com"] {background:url(%%politics-media%%) -540px -315px!important; }
+.link a.thumbnail[href*="propublica.org"] {background:url(%%politics-media%%) -270px -495px!important; }
+.link a.thumbnail[href*="youtube.com"] {background:url(%%politics-media%%) -180px -765px!important; }
+.link a.thumbnail[href*="buzzfeed.com"] {background:url(%%politics-media%%) -450px -90px!important; }
+.link a.thumbnail[href*="opposingviews.com"] {background:url(%%politics-media%%) -90px -450px!important; }
+.link a.thumbnail[href*="mlive.com"] {background:url(%%politics-media%%) -360px -315px!important; }
+.link a.thumbnail[href*="aclu.org"] {background:url(%%politics-media%%) -180px 0!important; }
+.link a.thumbnail[href*="thehill.com"] {background:url(%%politics-media%%) -360px -675px!important; }
+.link a.thumbnail[href*="providencejournal.com"] {background:url(%%politics-media%%) -360px -495px!important; }
+.link a.thumbnail[href*="bostonglobe.com"] {background:url(%%politics-media%%) -180px -630px!important; }
+.link a.thumbnail[href*="burntorangereport.com"] {background:url(%%politics-media%%) -180px -90px!important; }
+.link a.thumbnail[href*="commondreams.org"] {background:url(%%politics-media%%) -540px -135px!important; }
+.link a.thumbnail[href*="businessweek.com"] {background:url(%%politics-media%%) -360px -90px!important; }
+.link a.thumbnail[href*="washingtonmonthly.com"] {background:url(%%politics-media%%) -720px -405px!important; }
+.link a.thumbnail[href*="gallup.com"] {background:url(%%politics-media%%) -540px -225px!important; }
+.link a.thumbnail[href*="baltimoresun.com"] {background:url(%%politics-media%%) -90px -45px!important; }
+.link a.thumbnail[href*="masslive.com"] {background:url(%%politics-media%%) 0 -315px!important; }
+.link a.thumbnail[href*="eff.org"] {background:url(%%politics-media%%) -630px -180px!important; }
+.link a.thumbnail[href*="washingtonblade.com"] {background:url(%%politics-media%%) -720px -270px!important; }
+.link a.thumbnail[href*="newsmax.com"] {background:url(%%politics-media%%) 0 -405px!important; }
+.link a.thumbnail[href*="newsweek.com"] {background:url(%%politics-media%%) -270px -405px!important; }
+.link a.thumbnail[href*="represent.us"] {background:url(%%politics-media%%) 0 -540px!important; }
+.link a.thumbnail[href*="thecontributor.com"] {background:url(%%politics-media%%) -450px -630px!important; }
+.link a.thumbnail[href*="msn.com"] {background:url(%%politics-media%%) -90px -405px!important; }
+.link a.thumbnail[href*="usnews.com"] {background:url(%%politics-media%%) -720px -135px!important; }
+.link a.thumbnail[href*="nejm.org"] {background:url(%%politics-media%%) -360px -360px!important; }
+.link a.thumbnail[href*="newrepublic.com"] {background:url(%%politics-media%%) -450px -360px!important; }
+.link a.thumbnail[href*="breitbart.com"] {background:url(%%politics-media%%) 0 -90px!important; }
+.link a.thumbnail[href*="breitbartunmasked.com"] {background:url(%%politics-media%%) -90px -90px!important; }
+.link a.thumbnail[href*=".citypaper.com"] {background:url(%%politics-media%%) -270px -135px!important; }
+.link a.thumbnail[href*="courthousenews.com"] {background:url(%%politics-media%%) -630px -135px!important; }
+.link a.thumbnail[href*="crooksandliars.com"] {background:url(%%politics-media%%) 0 -180px!important; }
+.link a.thumbnail[href*="svbtle.com"] {background:url(%%politics-media%%) -450px -585px!important; }
+.link a.thumbnail[href*="tribuneherald.net"] {background:url(%%politics-media%%) -720px 0!important; }
+.link a.thumbnail[href*="wikileaks.org"] {background:url(%%politics-media%%) -720px -540px!important; }
+.link a.thumbnail[href*="democracynow.org"] {background:url(%%politics-media%%) -270px -180px!important; }
+.link a.thumbnail[href*="wired.com"] {background:url(%%politics-media%%) -720px -585px!important; }
+.link a.thumbnail[href*="nymag.com"] {background:url(%%politics-media%%) -450px -405px!important; }
+.link a.thumbnail[href*="arstechnica.com"] {background:url(%%politics-media%%) -630px 0!important; }
+.link a.thumbnail[href*="cnbc.com"] {background:url(%%politics-media%%) -360px -135px!important; }
+.link a.thumbnail[href*="foxnews.com"] {background:url(%%politics-media%%) -360px -225px!important; }
+.link a.thumbnail[href*="techdirt.com"] {background:url(%%politics-media%%) -630px -585px!important; }
+.link a.thumbnail[href*="rawstory.com"] {background:url(%%politics-media%%) -540px -495px!important; }
+.link a.thumbnail[href*="publicintegrity.org"] {background:url(%%politics-media%%) -450px -495px!important; }
+.link a.thumbnail[href*="thewire.com"] {background:url(%%politics-media%%) -360px -720px!important; }
+.link a.thumbnail[href*="nationalreview.com"] {background:url(%%politics-media%%) -180px -360px!important; }
+.link a.thumbnail[href*="antiwar.com"] {background:url(%%politics-media%%) -540px 0!important; }
+.link a.thumbnail[href*="military.com"] {background:url(%%politics-media%%) -270px -315px!important; }
+.link a.thumbnail[href*="nationalinterest.org"] {background:url(%%politics-media%%) 0 -720px!important; }
+.link a.thumbnail[href*="wsws.org"] {background:url(%%politics-media%%) -720px -675px!important; }
+.link a.thumbnail[href*="rollcall.com"] {background:url(%%politics-media%%) -270px -540px!important; }
+.link a.thumbnail[href*="sun-sentinel.com"] {background:url(%%politics-media%%) -270px -585px!important; }
+.link a.thumbnail[href*="tampabay.com"] {background:url(%%politics-media%%) -540px -585px!important; }
+.link a.thumbnail[href*="globalresearch.ca"] {background:url(%%politics-media%%) -90px -270px!important; }
+.link a.thumbnail[href*="reason.com"] {background:url(%%politics-media%%) -630px -495px!important; }
+.link a.thumbnail[href*="washingtonexaminer.com"] {background:url(%%politics-media%%) -720px -360px!important; }
+.link a.thumbnail[href*="abclocal.go.com"] {background:url(%%politics-media%%) 0 0!important; }
+.link a.thumbnail[href*="vice.com"] {background:url(%%politics-media%%) -720px -225px!important; }
+.link a.thumbnail[href*="pewresearch.org"] {background:url(%%politics-media%%) -270px -450px!important; }
+.link a.thumbnail[href*="communities.washingtontimes.com"] {background:url(%%politics-media%%) -720px -720px!important; }
+.link a.thumbnail[href*="belfasttelegraph.co.uk"] {background:url(%%politics-media%%) -360px -45px!important; }
+.link a.thumbnail[href*="fayobserver.com"] {background:url(%%politics-media%%) -90px -225px!important; }
+.link a.thumbnail[href*="vancouverobserver.com"] {background:url(%%politics-media%%) -720px -180px!important; }
+.link a.thumbnail[href*="bangordailynews.com"] {background:url(%%politics-media%%) -180px -45px!important; }
+.link a.thumbnail[href*="planphilly.com"] {background:url(%%politics-media%%) -450px -450px!important; }
+.link a.thumbnail[href*="wvgazette.com"] {background:url(%%politics-media%%) 0 -765px!important; }
+.link a.thumbnail[href*="washingtoncitypaper.com"] {background:url(%%politics-media%%) -720px -315px!important; }
+.link a.thumbnail[href*="chillicothegazette.com"] {background:url(%%politics-media%%) -180px -135px!important; }
+.link a.thumbnail[href*="globegazette.com"] {background:url(%%politics-media%%) -180px -270px!important; }
+
+.link a.thumbnail[href*="aljazeera.com"] img,
+.link a.thumbnail[href*="abcnews.go"] img,
+.link a.thumbnail[href*="ap.org"] img,
+.link a.thumbnail[href*="theatlantic"] img,
+.link a.thumbnail[href*="ahram.org.eg"] img,
+.link a.thumbnail[href*="alarabiya.net"] img,
+.link a.thumbnail[href*="bbc.co.uk"] img,
+.link a.thumbnail[href*="bloomberg.com"] img,
+.link a.thumbnail[href*="boston.com"] img,
+.link a.thumbnail[href*="buffalonews.com"] img,
+.link a.thumbnail[href*="bostonherald.com"] img,
+.link a.thumbnail[href*="cbc.ca"] img,
+.link a.thumbnail[href*="cbsnews.com"] img,
+.link a.thumbnail[href*="csmonitor.com"] img,
+.link a.thumbnail[href*="cnn.com"] img,
+.link a.thumbnail[href*="suntimes.com"] img,
+.link a.thumbnail[href*="chicagotribune.com"] img,
+.link a.thumbnail[href*="chron.com"] img,
+.link a.thumbnail[href*="dw.de"] img,
+.link a.thumbnail[href*="freep.com"] img,
+.link a.thumbnail[href*="thediplomat.com"] img,
+.link a.thumbnail[href*="dailynews.com"] img,
+.link a.thumbnail[href*="dailystar.com"] img,
+.link a.thumbnail[href*="economist.com"] img,
+.link a.thumbnail[href*="elpais.com"] img,
+.link a.thumbnail[href*="forbes.com"] img,
+.link a.thumbnail[href*="foreignpolicy.com"] img,
+.link a.thumbnail[href*="france24.com"] img,
+.link a.thumbnail[href*="gazette.com"] img,
+.link a.thumbnail[href*="theguardian.com"] img,
+.link a.thumbnail[href*="globalpost.com"] img,
+.link a.thumbnail[href*="theglobeandmail.com"] img,
+.link a.thumbnail[href*="haaretz.com"] img,
+.link a.thumbnail[href*="huffingtonpost.com"] img,
+.link a.thumbnail[href*="independent.co.uk"] img,
+.link a.thumbnail[href*="latimes.com"] img,
+.link a.thumbnail[href*="motherjones.com"] img,
+.link a.thumbnail[href*="msnbc.com"] img,
+.link a.thumbnail[href*="mercurynews.com"] img,
+.link a.thumbnail[href*="miamiherald.com"] img,
+.link a.thumbnail[href*="mondediplo.com"] img,
+.link a.thumbnail[href*="newsday.com"] img,
+.link a.thumbnail[href*="nationalpost.com"] img,
+.link a.thumbnail[href*="npr.org"] img,
+.link a.thumbnail[href*="newyorker.com"] img,
+.link a.thumbnail[href*="newstatesman.com"] img,
+.link a.thumbnail[href*="nbcnews.com"] img,
+.link a.thumbnail[href*="nytimes.com"] img,
+.link a.thumbnail[href*="thenation.com"] img,
+.link a.thumbnail[href*="news.com.au"] img,
+.link a.thumbnail[href*="post-gazette.com"] img,
+.link a.thumbnail[href*="politico.com"] img,
+.link a.thumbnail[href*="politicususa.com"] img,
+.link a.thumbnail[href*="pbs.org"] img,
+.link a.thumbnail[href*="philly.com"] img,
+.link a.thumbnail[href*="pri.org"] img,
+.link a.thumbnail[href*="reuters.com"] img,
+.link a.thumbnail[href*="spiegel.de"] img,
+.link a.thumbnail[href*="scientificamerican.com"] img,
+.link a.thumbnail[href*="seattlepi.com"] img,
+.link a.thumbnail[href*="seattletimes.com"] img,
+.link a.thumbnail[href*="sfgate.com"] img,
+.link a.thumbnail[href*="slate.com"] img,
+.link a.thumbnail[href*="stltoday.com"] img,
+.link a.thumbnail[href*="thestar.com"] img,
+.link a.thumbnail[href*="thinkprogress.org"] img,
+.link a.thumbnail[href*="talkingpointsmemo.com"] img,
+.link a.thumbnail[href*="telegraph.co.uk"] img,
+.link a.thumbnail[href*="time.com"] img,
+.link a.thumbnail[href*="theaustralian.com.au"] img,
+.link a.thumbnail[href*="upi.com"] img,
+.link a.thumbnail[href*="news.yahoo.com"] img,
+.link a.thumbnail[href*="washingtonpost.com"] img,
+.link a.thumbnail[href*="washingtontimes.com"] img,
+.link a.thumbnail[href*="wsj.com"] img,
+.link a.thumbnail[href*="rollingstone.com"] img,
+.link a.thumbnail[href*="thedailybeast.com"] img,
+.link a.thumbnail[href*="businessinsider.com"] img,
+.link a.thumbnail[href*="usatoday.com"] img,
+.link a.thumbnail[href*="marketwatch.com"] img,
+.link a.thumbnail[href*="newsworks.org"] img,
+.link a.thumbnail[href*="charlotteobserver.com"] img,
+.link a.thumbnail[href*="nationaljournal.com"] img,
+.link a.thumbnail[href*="politifact.com"] img,
+.link a.thumbnail[href*="dailymail.co.uk"] img,
+.link a.thumbnail[href*="ringoffireradio.com"] img,
+.link a.thumbnail[href*="billmoyers.com"] img,
+.link a.thumbnail[href*="propublica.org"] img,
+.link a.thumbnail[href*="youtube.com"] img,
+.link a.thumbnail[href*="buzzfeed.com"] img,
+.link a.thumbnail[href*="opposingviews.com"] img,
+.link a.thumbnail[href*="mlive.com"] img,
+.link a.thumbnail[href*="aclu.org"] img,
+.link a.thumbnail[href*="thehill.com"] img,
+.link a.thumbnail[href*="providencejournal.com"] img,
+.link a.thumbnail[href*="bostonglobe.com"] img,
+.link a.thumbnail[href*="burntorangereport.com"] img,
+.link a.thumbnail[href*="commondreams.org"] img,
+.link a.thumbnail[href*="businessweek.com"] img,
+.link a.thumbnail[href*="washingtonmonthly.com"] img,
+.link a.thumbnail[href*="gallup.com"] img,
+.link a.thumbnail[href*="baltimoresun.com"] img,
+.link a.thumbnail[href*="masslive.com"] img,
+.link a.thumbnail[href*="eff.org"] img,
+.link a.thumbnail[href*="washingtonblade.com"] img,
+.link a.thumbnail[href*="newsmax.com"] img,
+.link a.thumbnail[href*="newsweek.com"] img,
+.link a.thumbnail[href*="represent.us"] img,
+.link a.thumbnail[href*="thecontributor.com"] img,
+.link a.thumbnail[href*="msn.com"] img,
+.link a.thumbnail[href*="usnews.com"] img,
+.link a.thumbnail[href*="nejm.org"] img,
+.link a.thumbnail[href*="newrepublic.com"] img,
+.link a.thumbnail[href*="breitbart.com"] img,
+.link a.thumbnail[href*="breitbartunmasked.com"] img,
+.link a.thumbnail[href*=".citypaper.com"] img,
+.link a.thumbnail[href*="courthousenews.com"] img,
+.link a.thumbnail[href*="crooksandliars.com"] img,
+.link a.thumbnail[href*="svbtle.com"] img,
+.link a.thumbnail[href*="tribuneherald.net"] img,
+.link a.thumbnail[href*="wikileaks.org"] img,
+.link a.thumbnail[href*="democracynow.org"] img,
+.link a.thumbnail[href*="wired.com"] img,
+.link a.thumbnail[href*="nymag.com"] img,
+.link a.thumbnail[href*="arstechnica.com"] img,
+.link a.thumbnail[href*="cnbc.com"] img,
+.link a.thumbnail[href*="foxnews.com"] img,
+.link a.thumbnail[href*="techdirt.com"] img,
+.link a.thumbnail[href*="rawstory.com"] img,
+.link a.thumbnail[href*="publicintegrity.org"] img,
+.link a.thumbnail[href*="thewire.com"] img,
+.link a.thumbnail[href*="nationalreview.com"] img,
+.link a.thumbnail[href*="antiwar.com"] img,
+.link a.thumbnail[href*="military.com"] img,
+.link a.thumbnail[href*="nationalinterest.org"] img,
+.link a.thumbnail[href*="wsws.org"] img,
+.link a.thumbnail[href*="rollcall.com"] img,
+.link a.thumbnail[href*="sun-sentinel.com"] img,
+.link a.thumbnail[href*="tampabay.com"] img,
+.link a.thumbnail[href*="globalresearch.ca"] img,
+.link a.thumbnail[href*="reason.com"] img,
+.link a.thumbnail[href*="washingtonexaminer.com"] img,
+.link a.thumbnail[href*="abclocal.go.com"] img,
+.link a.thumbnail[href*="vice.com"] img,
+.link a.thumbnail[href*="pewresearch.org"] img,
+.link a.thumbnail[href*="communities.washingtontimes.com"] img,
+.link a.thumbnail[href*="belfasttelegraph.co.uk"] img,
+.link a.thumbnail[href*="fayobserver.com"] img,
+.link a.thumbnail[href*="vancouverobserver.com"] img,
+.link a.thumbnail[href*="bangordailynews.com"] img,
+.link a.thumbnail[href*="planphilly.com"] img,
+.link a.thumbnail[href*="wvgazette.com"] img,
+.link a.thumbnail[href*="washingtoncitypaper.com"] img,
+.link a.thumbnail[href*="chillicothegazette.com"] img,
+.link a.thumbnail[href*="globegazette.com"] img  { display: none; }
+
+/* Slide-in self posts */
+.self .expanded ~ .expando .usertext-body, .madeVisible {
+    -webkit-animation: 700ms exp forwards;
+       -moz-animation: 700ms exp forwards;
+            animation: 700ms exp forwards; }
+
+	@-webkit-keyframes exp {
+	    0% { top: -200px; opacity: 0; }
+	    50% { top: 0; }
+	    100% { top: 0; opacity: 1; } }
+	
+	@-moz-keyframes exp {
+	    0% { top: -200px; opacity: 0; }
+	    50% { top: 0; }
+	    100% { top: 0; opacity: 1; } }
+	
+	@keyframes exp {
+	    0% { top: -200px; opacity: 0; }
+	    50% { top: 0; }
+	    100% { top: 0; opacity: 1; } }
+
+.link .usertext .md { padding: 10px; }
+
+.nextprev a, .next-suggestions a {
+	color: #313E3E;
+	background: #FAFBFC;
+	border: 1px solid #DADFE3;
+	font-weight: bold;
+	line-height: 1.5em;
+	padding: 3px 10px; }
+
+/* Footer */
+.footer, .footer-parent { margin: 0; padding-bottom: 30px; padding-top: 0; border: 0; border-radius: 0; background: #fdfdfd; }
+.footer-parent { border-top: 1px solid #dee5e7; padding-top: 30px; margin: 30px 0 0 0; border-top: 1px solid #dcdcdc; }
+.footer div.col { position: relative; margin: 0; padding: 0; width: 176px; height: auto; font-family: Arial, sans-serif; }
+.footer div.col .title { font-size: 16px; font-weight: bold; padding: 8px; color: #fff; background: #586698; }
+.footer div.col a { display: block; margin: 5px; padding: 3px 4px 3px 7px; color: #000; }
+.footer div.col a:hover { color: #000; text-decoration: none; background: #fff; }
+.footer p.bottommenu { clear: left; color: #FFF; padding: 6px; font-weight: bold; }
+.footer p.bottommenu a { font-weight: bold; color: #FFF; }
+.debuginfo { background: #f5f5f5; border-top: 1px solid #dcdcdc; }
+
+.side {
+	margin: 43px 2px 0 0;
+	box-shadow: 0 0 0 1px #ccc,0 1px 0 rgba(0,0,0,0.035);
+	border-radius:0 0 2px 2px;
+	border-top:6px solid #586698;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	width: 298px; }
+
+.sidebox.create { display: none; }
+
+#search {
+	position: absolute;
+	top: 133px;
+	z-index: 200;
+	right: 0;
+	margin-right: 10px;
+	width: 200px; }
+
+#search input[type=text] {
+	box-shadow: inset 0 0 10px rgba(0,0,0,.2);
+	border: 1px solid rgba(255,255,255,.05);
+	background: rgba(255,255,255,.05);
+	width: 200px;
+	padding: 3px;
+	font-size: 12px; }
+
+#search input[type="text"]::-webkit-input-placeholder { color: rgba(255,255,255,.3) !important;}
+#search input[type="text"]::-moz-placeholder { color: rgba(255,255,255,.3) !important;}
+#search input[type=text]:hover { border: 1px solid rgba(255,255,255,.2); }
+#search input[type=text]:focus { border: 1px solid rgba(255,255,255,.4); outline: 0; }
+#search input[type=submit] { background: url(%%politics-spritesheet%%) -241px -204px no-repeat; }
+
+#searchexpando {
+	width: 200px;
+	position: absolute;
+	right: 0;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.2); }
+
+h1.redditname { font-size: 28px; width: 300px; text-align: center; padding: 3px 0 10px 0;}
+h1.redditname a { color: #2a3f4d; font-weight: normal; }
+h1.redditname a:hover { color: #464646; text-decoration: none; }
+.side .redditname a:before { content: "r/"; }
+h1.redditname:before { font-size: 14px; content: "welcome to"; display: block; font-weight: normal; }
+
+/* RES Use subreddit style button */
+.res .side .titlebox h1+div { text-align: center; background: #eceff1!important; padding: 0 0 10px 0!important;}
+
+/* Subscribe, Dashboard, Shortcut buttons */
+.fancy-toggle-button > .option.add,
+.fancy-toggle-button > .option.remove,
+.res .RESshortcutside,
+.res .RESshortcutside.remove,
+.res .RESDashboardToggle,
+.res .RESDashboardToggle.remove {
+	color: #313E3E;
+	padding: 8px;
+	width: auto;
+	min-width: 4em;
+	height: auto;
+	line-height: 1.5em;
+	vertical-align: middle;
+	text-decoration: none;
+	border: 1px solid #DADFE3;
+	text-align: center;
+	margin-right: 3px;
+	background: #FAFBFC;
+	border-radius: 3px; }
+
+.fancy-toggle-button > .option.add:focus,
+.fancy-toggle-button > .option.remove:focus { outline: none; }
+
+.fancy-toggle-button > .option.add:visited,
+.fancy-toggle-button > .option.remove:visited,
+.res .RESshortcutside:visited,
+.res .RESDashboardToggle:visited { color: #313E3E; }
+
+.fancy-toggle-button > .option.add:hover,
+.fancy-toggle-button > .option.remove:hover,
+.res .RESshortcutside:hover,
+.res .RESDashboardToggle:hover,
+.fancy-toggle-button > .option.add:focus,
+.fancy-toggle-button > .option.remove:focus,
+.res .RESshortcutside:focus,
+.res .RESDashboardToggle:focus {
+	color: #313E3E;
+	text-decoration: none !important;
+	background: #eef1f5;
+	border: 1px solid #cccccc; }
+
+.fancy-toggle-button > .option.add:active,
+.fancy-toggle-button > .option.remove:active,
+.res .RESshortcutside:active,
+.res .RESDashboardToggle:active { background: #e1e7ed; }
+
+.res .RESshortcutside, .res .RESshortcutside.remove,
+.res .RESDashboardToggle,
+.res .RESDashboardToggle.remove {
+	font-size: 12px !important;
+	display: inline-block !important;
+	vertical-align: middle;
+	width: 94px;
+	padding: 2px 0;
+	margin: 0; }
+
+.res .RESshortcutside, .res .RESshortcutside.remove { margin: 0 6px 0 50px; }
+.fancy-toggle-button > .option.add, .fancy-toggle-button > .option.remove { font-size: 12px; margin: 0; }
+.fancy-toggle-button > .option.add.active, .fancy-toggle-button > .option.remove.active {display: inline-block; vertical-align: middle; }
+.fancy-toggle-button > .option.add, .fancy-toggle-button > .option.add:hover, .fancy-toggle-button > .option.add:focus, .fancy-toggle-button > .option.add:active {
+    background: #FAFBFC; }
+.fancy-toggle-button > .option.add:after, .fancy-toggle-button > .option.add:hover:after, .fancy-toggle-button > .option.add:focus:after, .fancy-toggle-button > .option.add:active:after {
+content: " to this subreddit"; }
+.fancy-toggle-button > .option.remove, .fancy-toggle-button > .option.remove:hover, .fancy-toggle-button > .option.remove:focus, .fancy-toggle-button > .option.remove:active {
+    background: #FAFBFC; }
+.fancy-toggle-button > .option.remove:after, .fancy-toggle-button > .option.remove:hover:after, .fancy-toggle-button > .option.remove:focus:after, .fancy-toggle-button > .option.remove:active:after {
+content: " from this subreddit"; }
+
+.fancy-toggle-button > .option.add:hover,
+.fancy-toggle-button > .option.remove:hover { background: #eef1f5; }
+
+body:not(.res) .titlebox .fancy-toggle-button { display: block; }
+.titlebox .subscribe-button { display: block; text-align: center; }
+.titlebox .fancy-toggle-button { margin-bottom: 6px; margin-right: 0; }
+.titlebox .subscribe-button { display: block; text-align: center;}
+
+#authorInfoToolTip .fancy-toggle-button>.option.add:after,
+#authorInfoToolTip .fancy-toggle-button>.option.add:hover:after,
+#authorInfoToolTip .fancy-toggle-button>.option.add:focus:after,
+#authorInfoToolTip .fancy-toggle-button>.option.add:active:after { content: ""; }
+#authorInfoToolTip .fancy-toggle-button>.option.add {padding: 4px; }
+
+/* Subscribers and users online */
+.subscribers, .users-online { margin: 12px 0; padding: 5px; }
+.users-online::before { background: none; }
+
+.subscribers,
+.users-online {
+	display: inline-block;
+	vertical-align: top;
+	width: 101px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center; }
+
+.subscribers .number,
+.users-online .number { font-size: 1.3em; font-weight: bold; }
+.subscribers .word,
+.users-online .word { display: none; }
+.subscribers::after,
+.users-online::after {
+	display: block;
+	font-size: 0.9em;
+	font-weight: normal;
+	text-transform: uppercase; }
+
+.subscribers {
+	margin-left: 40px;
+	border-right: 1px solid #DADFE3;
+	border-radius: 3px 0 0 3px; }
+
+.subscribers::after { content: 'subscribers'; }
+.users-online { border-radius: 0 3px 3px 0; border-left: 0; }
+.users-online::before { display: none; }
+.users-online::after { content: 'online'; }
+
+/* Hide useless stuff */
+.titlebox form.toggle, .leavemoderator, .titlebox .tagline { display: none; }
+
+.side .md p {
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 5px 30px 15px 30px; }
+
+.side .md p:last-of-type { border: none; }
+
+.side .md h1 {
+	margin: 20px 40px;
+	color: #586698;
+	padding: 5px 0;
+	font-size: 22px;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: -1px;
+	text-decoration: none;
+	border-bottom: 3px solid #b93a43; }
+
+/* Submission Guidelines on sidebar */
+.side .md h1 { margin: 20px 30px; }
+
+/* Announcement on top of the listings */
+.side .md h2 {
+	position: absolute;
+	top: 162px;
+	left: 0;
+	right: 0;
+	text-align: left;
+	padding-left: 37px;
+	content: "blablalb";
+	display: inline-block;
+	height: 37px;
+	line-height: 37px;
+	background: #fdfdfd;
+	color: #444;
+	font-weight: normal;
+	border-bottom: 1px solid #dcdcdc; }
+
+.side .md h2:before {
+	position: absolute;
+	left: 10px;
+	width:22px;
+	height:37px;
+	content: "";
+	font-style:normal;
+	background: url(%%politics-spritesheet%%) -241px -152px no-repeat; }
+
+.side h2 a { color: #b93a43; text-decoration: none; font-weight: bold; }
+.side h3 { margin: 30px 0 20px 0; }
+
+.side h3 a[href*="https://www.reddit.com/r/politics/wiki/index"] { margin-left: 36px; }
+
+.side h3 a[href*="https://www.reddit.com/r/politics/wiki/index"],
+.side h3 a[href*="https://www.reddit.com/wiki/reddiquette"] {
+	display: inline-block;
+	position: relative;
+	width: 92px;
+	text-align: left;
+	padding: 5px 10px;
+	color: #fff;
+	background: #586698;
+	border-radius: 3px; }
+
+.side h3 a[href*="https://www.reddit.com/wiki/reddiquette"] { text-indent: 10px; background: #B93A43; }
+
+.side h3 a[href*="https://www.reddit.com/r/politics/wiki/index"]:hover { background: #515e8c; }
+.side h3 a[href*="https://www.reddit.com/wiki/reddiquette"]:hover { background: #aa353e; }
+
+.side h3 a[href*="https://www.reddit.com/wiki/reddiquette"]:before {
+	position: absolute;
+	content: "";
+	left: -15px;
+	top: 0;
+	background: url(%%politics-spritesheet%%) -297px -90px no-repeat #B93A43;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px; }
+
+.side .md h4 {
+	position: relative;
+	display: block;
+	width: 180px;
+	min-height: 29px;
+	line-height: 29px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	color: #586698;
+	border-radius: 3px; }
+
+.side .md h4 a { color: #586698!important; }
+.side .md h4:nth-of-type(1),
+.side .md h4:nth-of-type(2),
+.side .md h4:nth-of-type(3) { padding-left: 20px; }
+
+.side .md h4:nth-of-type(1):before,
+.side .md h4:nth-of-type(2):before,
+.side .md h4:nth-of-type(3):before {
+	position: absolute;
+	display: inline-block;
+	content: "";
+	left: 0;
+	width: 19px;
+	height: 29px;
+	background: url(%%politics-spritesheet%%) -241px -65px no-repeat; }
+
+.side .md h4:nth-of-type(1):before { background: url(%%politics-spritesheet%%) -241px -65px no-repeat; }
+.side .md h4:nth-of-type(2):before { background: url(%%politics-spritesheet%%) -52px 0 no-repeat; }
+.side .md h4:nth-of-type(3):before { background: url(%%politics-spritesheet%%) -264px -90px no-repeat; }
+
+.side .md h4:nth-of-type(4) { background: #586698; text-align: center; margin-top: 20px; }
+.side .md h4:nth-of-type(4):hover { background: #515e8c; }
+.side .md h4:nth-of-type(4) a { color: #fff!important; }
+.side .md h4:nth-of-type(4):before,
+.side .md h4:nth-of-type(4):after {
+	position: absolute;
+	display: block;
+	content: "";
+	left: 0;
+	top: 0;
+	background: url(%%politics-spritesheet%%) -322px -90px no-repeat #b93a43;
+	width: 29px;
+	height: 29px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px; }
+
+.side .md h4:nth-of-type(4):before { border-right: 2px solid #fff; }
+.side .md h4:nth-of-type(4):after { left: 152px; border-left: 2px solid #fff; border-radius: 0; border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
+
+.side .md h4:nth-of-type(4):hover:before,
+.side .md h4:nth-of-type(4):hover:after {
+	-webkit-animation:spin 2s ease-in-out;
+	   -moz-animation:spin 2s ease-in-out;
+			animation:spin 2s ease-in-out; }
+
+	@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+	   @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+			@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.side .md h4 + ul { margin: 0 3em; padding: 3px; list-style: none; }
+.side .md h4 + ul { display: none; }
+.side .md h4:hover + ul,
+.side .md h4 + ul:hover { display: block; }
+.side .md h4:after { margin-bottom: 10px; }
+
+.morelink {
+	width: 240px;
+	height: 40px;
+	margin: 0 30px;
+	font-family: Segoe,"Segoe UI",Optima,Candara,Calibri,Arial,sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 40px;
+	border: 0;
+	background: #b93a43;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+	   -moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+	-webkit-transition: 0.1s ease-in-out;
+	   -moz-transition: 0.1s ease-in-out;
+		 -o-transition: 0.1s ease-in-out;
+			transition: 0.1s ease-in-out; }
+
+.morelink:hover { background: #aa353e; }
+
+.morelink:active {
+	background: #9b3138;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+	   -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1); }
+
+.morelink a { color: #fff; }
+.morelink .nub { display: none; }
+
+.side table {
+	display: block;
+	width: 230px;
+	margin-left: auto;
+	margin-right: auto;
+	counter-reset: tr-counter; }
+
+.side table thead { display: none; }
+.side table tbody tr {
+	position:relative;
+	display: block;
+	width: 230px; 
+	border-bottom: 5px solid #fff; }
+
+.side table tbody tr td { display: block; border: none; text-align: left; }
+
+.side table tbody tr td:first-child {
+	padding: 8px 0;
+	font-weight: bold;
+	color: #313E3E;
+	border: 1px solid #DADFE3;
+	text-align: left;
+	background: #FAFBFC;
+	border-radius: 3px;
+	cursor: pointer;
+	border-spacing: 1px; }
+
+.side table tbody tr td:first-child:hover, .side table tbody tr:hover td:first-child { background: #eef1f5; }
+
+.side table tbody tr td:last-child {
+	display: none;
+	color: black; 
+	border-top: 0;
+	padding: 5px 5px 10px; }
+
+.side table tbody tr:hover td:last-child { display: block; }
+
+.side .md table tr { counter-increment: tr-counter; }
+
+.side .md table td:before{
+	content:' 'counter(tr-counter);
+	position: absolute;	
+	left: -1.3em;
+	margin-top: -1.3em;
+	top: 16px;
+	background: #5C6BC0;
+	height: 2em;
+	color: #fff;
+	width: 2em;
+	line-height: 2em;
+	border: .3em solid #F6F6F6;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 2em;
+	text-indent: 0; }
+
+.side .md table td:hover:before { display: none; }
+.side .md table td:first-child { padding-left: 20px; padding-right: 10px; }
+.side .md table tr:hover td:before { background: #b93a43; }
+
+/* Mod boxes etc */
+.sidecontentbox .content {
+	padding: 10px 10px 10px 26px;
+	color: #313E3E;
+	margin: 0 20px 20px 20px;
+	border: 1px solid #DADFE3;
+	background: #FAFBFC;
+	border-radius: 3px; }
+
+.sidecontentbox .content a { color: #313E3E; }
+.icon-menu a { background-color: transparent; }
+
+.sidecontentbox .title h1 {
+	margin-left: 30px;
+	color: gray;
+	font-size: 130%;
+	line-height: 30px; }
+
+.sidecontentbox .collapse-button { vertical-align: middle; }
+
+.side .spacer:nth-of-type(9) { padding-top: 35px; }
+
+.sidecontentbox a.helplink {
+	float: none;
+	position: absolute;
+	margin-top: -35px;
+	margin-left: 53px;
+	background: #b93a43;
+	color: #fff;
+	padding: 8px 8px 8px 36px;
+	text-transform: uppercase;
+	border-radius: 3px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+	   -moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.2); }
+
+.sidecontentbox a.helplink:before {
+	position: absolute;
+	content: "";
+	display: block;
+	left: 8px;
+	background: url(%%politics-spritesheet%%) -197px -23px no-repeat;
+	height: 13px;
+	width: 20px; }
+
+.sidecontentbox a.helplink:hover { background: #aa353e; }
+
+.helplink + .title { margin-top: 35px; }
+
+.titlebox .bottom { margin: 30px 0; font-size: 0px; cursor: text; border-top: 6px solid #586698; }
+.titlebox .bottom > .age { display:none; }
+
+/* Credits */
+.debuginfo:before {
+	float: left;
+	content: "css by /u/qtx";
+	display: block;
+	position: relative;
+	color: gray;
+	font-size: 9px; }
+
+/* Buttons */
+button.save, button.submit-report, button.submit-action-thing, button.cancel-action-thing, button.cancel, button.cancel-report-thing, .submit-page .content button[name="submit"] {
+	position: relative;
+	padding: 5px 10px;
+	border: 0;
+	width: 77px;
+	color: #fff;
+	overflow: hidden;
+	box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+	text-shadow: -1px -1px 0 rgba(0,0,0,.15);
+	border-radius: 1px;
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+		-ms-transition: all .2s ease;
+		 -o-transition: all .2s ease;
+			transition: all .2s ease; }
+
+button.save, button.submit-report, button.submit-action-thing, .submit-page .content button[name="submit"] {
+    background: #586698;
+    border: 1px solid #606fa3;
+    background-image: -webkit-linear-gradient(#586698,#515e8c);
+    background-image: -moz-linear-gradient(#586698,#515e8c);
+    background-image: linear-gradient(#586698,#515e8c); }
+
+button.cancel, button.cancel-report-thing, button.cancel-action-thing {
+    background-color: #B93A43;
+    border: 1px solid #c4434c;
+    background-image: -webkit-linear-gradient(#B93A43,#aa353e);
+    background-image: -moz-linear-gradient(#B93A43,#aa353e);
+    background-image: linear-gradient(#B93A43,#aa353e); }
+
+button.save:before, button.submit-report:before, button.submit-action-thing:before, .submit-page .content button[name="submit"]:before {
+	background: url(%%politics-spritesheet%%) -36px 0 no-repeat;
+	content: '';
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	left: -16px;
+	opacity: 0;
+	transition: opacity 200ms, left 200ms; }
+
+button.cancel:before, button.cancel-report-thing:before, button.cancel-action-thing:before {
+	background: url(%%politics-spritesheet%%) -20px 0 no-repeat;
+	content: '';
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	left: -16px;
+	opacity: 0;
+	transition: opacity 200ms, left 200ms; }
+
+button.save:hover:before, button.submit-report:hover:before, button.submit-action-thing:hover:before, button.cancel-action-thing:hover:before, button.cancel:hover:before, button.cancel-report-thing:hover:before, .submit-page .content button[name="submit"]:hover:before { opacity: 1; left: 10px; }
+button.save:hover, button.submit-report:hover, button.submit-action-thing:hover, button.cancel-action-thing:hover, button.cancel:hover, button.cancel-report-thing:hover, .submit-page .content button[name="submit"]:hover {
+	padding-left: 30px;
+	-webkit-box-shadow: 0 8px 6px -6px #bbb;
+	   -moz-box-shadow: 0 8px 6px -6px #bbb;
+			box-shadow: 0 8px 6px -6px #bbb; }
+
+button.save:hover, button.submit-report:hover, button.submit-action-thing:hover { background-color: #3498db; }
+button.cancel:hover, button.cancel-report-thing:hover, button.cancel-action-thing:hover { background-color:#c0392b; }
+.submit-page .content button[name="submit"]:hover { background-color: #3498db; }
+
+button.save:active, button.submit-report:active, button.submit-action-thing:active, button.cancel-action-thing:active, button.cancel:active, button.cancel-report-thing:active, .submit-page .content button[name="submit"]:active {
+	-webkit-box-shadow: 0 8px 6px -6px #fff;
+	   -moz-box-shadow: 0 8px 6px -6px #fff;
+			box-shadow: 0 8px 6px -6px #fff; }
+
+button.save:active, button.submit-report:active, button.submit-action-thing:active { background-color: #1abc9c; }
+button.cancel:active, button.cancel-report-thing:active, button.cancel-action-thing:active { background-color: #a02f24; }
+.submit-page .content button[name="submit"]:active { background-color: #1abc9c; }
+button.save:focus, button.submit-report:focus, button.submit-action-thing:focus, button.cancel-action-thing:focus, button.cancel:focus, button.cancel-report-thing:focus, .submit-page .content button[name="submit"]:focus { outline: none; }
+
+.action-form button.submit-action-thing { margin-right: 10px; }
+.reason-popup-footer button.save, .reason-popup-footer button.cancel { width: 157px; }
+
+/* Comment page */
+.comments-page .panestack-title {
+	position: relative;
+	margin: 20px 296px 0 20px;
+	padding: 20px 0 0 56px;
+	border-bottom: 0;
+	background: #fff; }
+
+.comments-page .panestack-title:before {
+	position: absolute;
+	left: 0;
+	background: url(%%politics-spritesheet%%) -144px 0 no-repeat;
+	width: 40px;
+	height: 19px;
+	content: "";
+	border-right: solid 1px #dcdcdc; }
+
+.res .RESSubscriptionButton {
+	font-weight: normal;
+	color: #fff;
+	border: 1px solid #009688;
+	background: #26A69A;
+	text-transform: uppercase; }
+
+.commentarea .menuarea {
+	font-family: cantarell,Arial,sans-serif;
+	margin: 0 294px 0 20px;
+	padding: 10px 0 10px 56px;
+	background: #fff; }
+
+.dropdown.lightdrop .selected { color: #2a3f4d; background-image: url(%%politics-downcircle%%); }
+
+.drop-choices {
+	background: white;
+	color: #333;
+	border: 1px solid gray;
+	border-radius: 3px;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.25); }
+
+.drop-choices a.choice { padding: 3px 10px 3px 6px; margin: 3px 0; border-left: 4px solid #fff; }
+.drop-choices a.choice:hover { border-left: 4px solid #586698; }
+
+.drop-choices.lightdrop { margin-top: 7px; }
+
+.drop-choices.lightdrop:after, .drop-choices.lightdrop:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none; }
+
+.drop-choices.lightdrop:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 5px;
+	margin-left: -57px; }
+
+.drop-choices.lightdrop:before {
+	border-color: rgba(100, 181, 246, 0);
+	border-bottom-color: gray;
+	border-width: 6px;
+	margin-left: -58px; }
+
+.commentarea .menuarea .toggle a {
+	position: relative;
+	color: #2a3f4d;
+	font-size: 12px;
+	text-decoration: underline;
+	margin-left: 19px; }
+
+.commentarea .menuarea .toggle a:before {
+	position: absolute;
+	left: -19px;
+	background: url(%%politics-spritesheet%%) -283px -90px no-repeat;
+	width: 14px;
+	height: 14px;
+	content: ""; }
+
+.comments-page .usertext-edit { margin-left: 56px; }
+
+.commentarea>.usertext textarea {
+	background-image: url(%%politics-commentbox%%);
+	background-repeat: no-repeat;
+	border: 1px solid #ccc; }
+
+.commentarea>.usertext textarea:focus {
+	background-position: 0 -204px;
+	-webkit-transition: all .5s ease-in-out;
+	   -moz-transition: all .5s ease-in-out;
+			transition: all .5s ease-in-out; }
+
+.commentarea>.usertext {
+	background: #fff;
+	margin: 0 0 20px 20px;
+	padding-bottom: 11px;
+	border-bottom: 1px solid #dcdcdc;
+	-moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+	 -ms-box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+	  -o-box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+		 box-shadow: 0 1px 1px 0 rgba(0,0,0,.05); }
+
+.gold-accent { background: transparent; border: 0; }
+.gold-accent.comment-visits-box { padding: 0; margin: 0px 5px 20px 67px; color: #666; max-width: 600px; }
+.rounded { border-radius: 3px; }
+.comment-visits-box .title { position: relative; font-weight: bold; padding-left: 19px; }
+
+.comment-visits-box .title:before {
+	position: absolute;
+	display: inline-block;
+	content: '';
+	background: url(%%politics-spritesheet%%) -163px -23px no-repeat;
+	height: 19px;
+	width: 13px;
+	left: 0; }
+
+.comment-visits-box .title select { border: 1px solid #ccc!important; margin-left: 5px!important; }
+
+.sitetable.nestedlisting>.comment { border: 1px solid rgba(230,230,230,0.7); }
+
+.comment .child, .comment .showreplies {
+	border-left: 0px !important;
+	margin-bottom: 1px;
+	padding: 0px; }
+
+.comment {
+	margin: 0!important;
+	margin-right: 5px!important;
+	margin-bottom: 8px !important;
+	background-color: #ffffff !important;
+	border: 1px solid rgba(230,230,230,0.7);
+	padding: 5px 8px 0 5px!important; }
+
+.comment,
+.comment .comment .comment,
+.comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment .comment { background-color: #fff !important; }
+
+.comment .comment,
+.comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment { background-color: #f5f5f5!important; }
+
+.comments-page .comment .entry .buttons li a { font-weight: normal; }
+
+.comment .child, .comment .showreplies { margin-top: 10px; margin-left: 0; }
+
+.res-commentBoxes .comment { margin-left: 1px!important; }
+
+.entry .buttons a[onclick*="reply"] { font-size: 8px!important; font-weight: bold!important; text-transform: uppercase; text-decoration: underline; }
+.entry .buttons a[onclick*="reply"] { color: #2a3f4d!important; }
+
+.deleted > .entry .grayed, .deleted .toggleChildren { display: none; }
+.deleted > .entry .tagline { font-size: 0; }
+.deleted > .entry .tagline:after { content: 'deleted/removed'; font-size: x-small; }
+.deleted > .entry .tagline .expand { font-size: x-small; }
+.deleted .collapsed { padding-left: 0; }
+.deleted > .entry .noncollapsed .tagline:after {
+	content: 'deleted/removed';
+	opacity: .5;
+	color: #f00;
+	font-size: x-small; }
+
+/* Deepthread */
+.deepthread a { color: #2a3f4d; }
+.deepthread a:hover { text-decoration: none; }
+.deepthread:after { background: url(%%politics-spritesheet%%) -184px 0 no-repeat; width: 19px; height: 14px; margin: 0; vertical-align: text-bottom; }
+
+/* Downvote warning */
+.comment .arrow.down:hover:before {
+	position: absolute;
+	display: block;
+	z-index: 1000;
+	width: 200px;
+	padding: 6px 0;
+	background-color:#EF5350;
+	color: #fff;
+	text-align: center;
+	font-size: 11px;
+	font-weight: bold;
+	margin-left: 20px;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+	   -moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+			box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+	content: "Vote based on quality, not opinion."; }
+
+/* Sidebar linkinfo */
+.comments-page .side .morelink { margin-top: 30px; }
+
+.comments-page .linkinfo, .related-page .linkinfo {
+	text-align: center;
+	width: 298px;
+	padding: 0;
+	background: #fdfdfd;
+	border: 0;
+	border-top: 0;
+	border-bottom: 1px solid #dee5e7;
+	border-left: 0;
+	border-radius: 0; }
+
+.comments-page .linkinfo .score .word, .related-page .linkinfo .score .word, { display: none; }
+.comments-page .linkinfo .score, .related-page .linkinfo .score { font-size: 11px; display: block; min-width: 80px; padding: 15px 40px; }
+.comments-page .linkinfo .score .number, .related-page .linkinfo .score .number { display: block; }
+.comments-page .linkinfo .totalvotes, .comments-page .linkinfo .upvotes, .comments-page .linkinfo .downvotes, .related-page .linkinfo .totalvotes, .related-page .linkinfo .upvotes, .related-page .linkinfo .downvotes { font-size: 110%; }
+.comments-page .linkinfo .upvotes .word, .comments-page .linkinfo .downvotes .word, .related-page .linkinfo .upvotes .word, .related-page .linkinfo .downvotes .word {display: none;}
+.comments-page .linkinfo .upvotes:after, .related-page .linkinfo .upvotes:after { content: "▲"; }
+.comments-page .linkinfo .downvotes:after, .related-page .linkinfo .downvotes:after { content: "▼"; }
+.comments-page .linkinfo .upvotes, .related-page .linkinfo .upvotes { margin-left: 10px; }
+.comments-page .linkinfo .shortlink, .related-page .linkinfo .shortlink { margin-top: 0; font-size: 0; text-align: center; visibility: hidden; }
+.comments-page .linkinfo .shortlink input, .related-page .linkinfo .shortlink input { border: 1px solid #dee5e7; border-bottom: 0; font-size: 11px; text-align: center; background: #fff; visibility: visible; margin-bottom: -1px; }
+.comments-page .linkinfo .date, .related-page .linkinfo .date { margin: 0; padding: 5px 0; border-top: 0; border-bottom: 1px solid #dee5e7; font-size: 12px; background: #fff; color: #000; font-weight: bold; text-align: center; }
+.comments-page .linkinfo .date span, .related-page .linkinfo .date span { font-size: 0; color: #FFF; }
+.comments-page .linkinfo .date span:after, .related-page .linkinfo .date span:after { content: "Submitted on "; display: inline; font-size: 12px; font-weight: normal; color: #111; }
+.res [class*="votes"] + .shortlink input { margin-top: 20px; }
+
+
+.res #REScommentNavToggle { font-family: Arial; color: #333!important; margin-top:3px; }
+
+.res .menuarea #REScommentNavToggle>span:first-child {
+	width: 6em;
+	float: left;
+	margin: 3px 5px 0px 5px;
+	display: inline-block;
+	text-align: right; }
+
+.res #REScommentNavToggle > span:not(:first-child) { display: none; }
+
+.res .commentNavSortType {
+	border: 1px solid #DADFE3;
+	background-color: #FAFBFC;
+	color: #313E3E;
+	text-decoration: none;
+	padding: 2px 6px;
+	margin-left: 3px!important; }
+
+.res .menuarea #REScommentNavToggle>span:first-child { color: gray; margin-left: 0; text-align: left; }
+.res .markdownEditor-wrapper { margin-left: 0; }
+.res .commentingAs { font-family: Arial; color: #333; }
+
+.res .commentNavSortType:hover { background: #F6F7F8; text-decoration: none!important; }
+
+.RESMacroDropdownTitle { background: url(%%politics-droparrowgray%%) 100% 50% no-repeat!important; }
+
+/* Taglines */
+.listing-page .thing .tagline .author.moderator, .comments-page .thing .tagline .author.moderator { padding: 0 8px 1px 8px!important; }
+.thing .tagline .author.moderator, .thing .tagline .author.submitter, .thing .tagline .author.friend {
+	font-weight: normal!important; padding: 1px 8px!important; border-radius: 0!important; color: #fff; opacity: 0.7; }
+
+.thing .tagline .author.moderator { background-color: #228822 !important; }
+.thing .tagline .author.submitter { background-color: #0055DF !important; }
+.thing .tagline .author.friend { background-color: #FF4500 !important; }
+
+.thing .tagline .author.moderator:hover, .thing .tagline .author.submitter:hover, .thing .tagline .author.friend:hover { opacity: 1!important; }
+
+/* Expandos */
+.expando-button { cursor: pointer; }
+.expando-button.selftext.collapsed, .expando-button.selftext.collapsed:hover { background: url(%%politics-spritesheet%%) -94px -23px no-repeat!important; opacity: 0.7; }
+.expando-button.video.collapsed, .expando-button.video.collapsed:hover { background: url(%%politics-spritesheet%%) -117px -23px no-repeat!important; opacity: 0.7; }
+
+.res .expando-button.image.collapsedExpando,
+.res .expando-button.image.collapsedExpando:hover,
+.res .expando-button.image.collapsed,
+.res .expando-button.image.collapsed:hover { background: url(%%politics-spritesheet%%) -71px -23px no-repeat!important; opacity: 0.7; }
+
+.res .expando-button.gallery.collapsed,
+.res .expando-button.gallery.collapsedExpando,
+.res .expando-button.gallery.collapsed:hover,
+.res .expando-button.gallery.collapsedExpando:hover { background: url(%%politics-spritesheet%%) -23px -23px no-repeat!important; opacity: 0.7; }
+
+.res .expando-button.video-muted.collapsed,
+.res .expando-button.video-muted.collapsed:hover { background: url(%%politics-spritesheet%%) -140px -23px no-repeat!important; opacity: 0.7; }
+
+.expando-button.selftext.expanded,
+.expando-button.selftext.expanded:hover,
+.expando-button.video.expanded,
+.expando-button.video.expanded:hover,
+.res .expando-button.image.expandedExpando,
+.res .expando-button.image.expandedExpando:hover,
+.res .expando-button.image.expanded,
+.res .expando-button.image.expanded:hover,
+.res .expando-button.gallery.expanded,
+.res .expando-button.gallery.expandedExpando,
+.res .expando-button.gallery.expanded:hover,
+.res .expando-button.gallery.expandedExpando:hover,
+.res .expando-button.video-muted.expanded,
+.res .expando-button.video-muted.expanded:hover { background: url(%%politics-spritesheet%%) 0 -23px no-repeat!important; opacity: 0.7; }
+
+.expando-button.selftext.collapsed:hover,
+.expando-button.video.collapsed:hover,
+.expando-button.selftext.expanded:hover,
+.expando-button.video.expanded:hover,
+.res .expando-button.image.collapsedExpando:hover,
+.res .expando-button.image.collapsed:hover,
+.res .expando-button.image.expandedExpando:hover,
+.res .expando-button.image.expanded:hover,
+.res .expando-button.gallery.collapsed:hover,
+.res .expando-button.gallery.collapsedExpando:hover,
+.res .expando-button.gallery.expanded:hover,
+.res .expando-button.gallery.expandedExpando:hover,
+.res .expando-button.video-muted.collapsed:hover,
+.res .expando-button.video-muted.expanded:hover { opacity: 1; }
+
+.commentarea .thing .usertext-body .expando-button {
+	vertical-align: middle!important;
+	-webkit-transform: scale(.8,.8);
+		-ms-transform: scale(.8,.8);
+			transform: scale(.8,.8); }
+
+/* Infobar */
+.infobar {
+	position: relative;
+	background-color: #E3F2FD;
+	padding: 5px 10px 5px 40px;
+	margin: 5px 305px 5px 0px;
+	border: 1px solid #BBDEFB;
+	border-left: 0;
+	font-size: small; }
+
+.infobar:before {
+	position: absolute;
+	content: "";
+	width: 24px;
+	height: 42px;
+	left: 8px;
+	top: 0;
+	background: url(%%politics-spritesheet%%) -241px -23px no-repeat; }
+
+/* Submit page */
+body.submit-page >.content { margin-top: 80px; margin-left: 20px; }
+body.submit-page >.content h1 { display: none; }
+.submit-page .pagename { font-size: 0; text-indent: -200px; }
+.submit-page .pagename a { text-indent: 0; }
+
+.submit-page ul.tabmenu.formtab { visibility: hidden; display: none; }
+.submit-page #reddit-field {display: none;}
+.submit_text.enabled { position: absolute; top: 210px; padding: 20px; }
+.submit_text { max-height: 390px; }
+.submit-page .formtabs-content .infobar { display: none!important; }
+
+.submit-page .formtabs-content { padding-top: 352px; border-top: 0; }
+
+.submit-page .roundfield { border: 1px solid #dcdcdc; }
+.submit_text.roundfield { border: 2px dashed #F44336; }
+
+.roundfield {
+	background-color: #fff;
+	color: #444;
+	border-radius: 3px;
+	padding-top: 10px;
+	-moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+	 -ms-box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+	  -o-box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+		 box-shadow: 0 1px 1px 0 rgba(0,0,0,.05); }
+
+.roundfield .gray { color: #93a8a8; }
+.roundfield .title { text-transform: capitalize; }
+
+.roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number] {
+    border: 1px solid #dadfe3; }
+.roundfield textarea:hover, .roundfield input[type=text]:hover, .roundfield input[type=url]:hover, .roundfield input[type=password]:hover, .roundfield input[type=number]:hover {
+    border: 1px solid #b9c2ca; }
+
+.submit-page .content.submit .info-notice { background-color: #72A7D3; color: #fff; border: 0; }
+.submit-page .content.submit .info-notice a { color: #fff; }
+
+/* hide the suggest title button - approved for use by /u/krispykrackers ===*/
+#url-field #suggest-title { display:none; }
+
+/* sticky post */
+.stickied .thumbnail.self { background: url(%%politics-spritesheet%%) -265px 0 no-repeat!important; }
+.tagline .stickied-tagline { font-size: 0; }
+.stickied-tagline:after {
+	content: "politics mod post";
+	font-size: 8px;
+	background: #69b391;
+	padding: 2px 10px;
+	text-transform: uppercase;
+	color: white!important;
+	margin-left: 5px; }
+
+/* Promoted links */
+.organic-listing { border: 1px solid #BBDEFB; border-left: 0; border-right: 0; }
+.organic-listing .link.promotedlink .midcol { margin: 0; margin-left: 110px; min-width: 40px;}
+.organic-listing .link.promotedlink a.thumbnail img { width: 70px; height: 70px; padding: 0; }
+.organic-listing .link.promotedlink .thumbnail { width: 70px; height: 70px; left: 70px; }
+.organic-listing .link.promotedlink .entry { padding-left: 10px; border-left: 1px solid #BBDEFB; }
+.organic-listing .link.promotedlink .score { top: 5px; }
+.organic-listing .link.promotedlink .arrow.up, .organic-listing .link.promotedlink .arrow.down { background-color: #dbedff; }
+.organic-listing .link.promotedlink .arrow.upmod { background-color: #ff8b60; }
+.organic-listing .link.promotedlink .arrow.downmod { background-color: #9494ff; }
+
+/* "No Participation"-Mode, aka "Read Only"-Mode */
+body:lang(np) .arrow { visibility: hidden !important; }
+body:lang(np) .usertext-edit, body:lang(np) .sidebox.submit, body:lang(np) .commentingAs, body:lang(np) .markdownEditor, body:lang(np) .report-button, body:lang(np) a[onclick*="return reply(this)"], body:lang(np) .helplink {display: none !important;}
+body:lang(np) #siteTable:before {
+content: "You have been linked to a read-only version of this subreddit. Please respect the community by not voting.";
+	display: block;
+	max-width: 800px;
+	background-color: #F6E69F;
+	padding: 5px 10px;
+	margin: 5px 305px 5px 0px;
+	border: 1px solid orange;
+	font-size: small; }
+
+body:lang(np) .entry.likes:not(.reddit-entry):before, body:lang(np) .entry.dislikes:not(.reddit-entry):before {
+	content: "Please do not vote or comment when you come from external subreddits.";
+	color: red;
+	font-size: large;
+	font-weight: bold; }
+
+a[href$="#spoiler"] {
+	position: relative;
+	background: #2a3f4d !important;
+	color: #2a3f4d !important;
+	padding-right: 10px;
+	padding-left: 37px; }
+
+a[href$="#spoiler"]:hover { color: #FFF !important; }
+
+a[href$="#spoiler"]::before {
+	position: absolute;
+	background: url(%%politics-spritesheet%%) -241px -217px no-repeat #2a3f4d;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	padding: 0 5px;
+	content: "";
+	border-right: 1px solid #fff; }
+
+a[href$="#spoiler"][title]::before { content: attr(title) " Spoiler"; }
+
+/* blockquotes */
+.thing .md blockquote {
+	display:block;
+	background: #fff;
+	padding: 10px 20px 10px 35px;
+	margin: 20px 10px;
+	position: relative;
+	line-height: 1.2;
+	color: #444;
+	text-align: justify;
+	border-left: 5px solid #586698;
+	border-radius: 3px; }
+
+.thing .md blockquote::before {
+	content: "“";
+	font-family: Georgia, serif;
+	font-size: 40px;
+	font-weight: bold;
+	color: #B93A43;
+	position: absolute;
+	left: 10px;
+	top:5px; }
+
+.thing .md blockquote::after { content: ""; }
+.thing .md blockquote a {
+	text-decoration: none;
+	background: #eee;
+	cursor: pointer;
+	padding: 0 3px;
+	color: #c76c0c; }
+
+.thing .md blockquote a:hover { color: #666; }
+.thing .md blockquote em { font-style: italic; }
+
+.commentarea .thing .md  blockquote { margin: 10px; background: #f3f9fe; }
+
+/* Code Formatting - modified from /r/netsec */
+.md pre {
+	background: #272822;
+	border: 0;
+	border-left: 36px solid #31332b;
+	position: relative;
+	margin-top: 25px;
+	line-height: 15px;
+	font-family: "Courier New", courier, monospace; }
+
+.md pre code {
+	padding: 15px;
+	overflow: auto;
+	display: block;
+	color: #66d9ef !important;
+	font-family: "Courier New", courier, monospace;
+	line-height:1.5em; }
+
+.md pre:after {
+	position: absolute;
+	content: "code:";
+	color: gray;
+	top: -20px;
+	left: -30px; }
+
+.md pre:before {
+	content: "   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 ";
+	height: 100%;
+	color: #8f908a;
+	line-height: 15px;
+	position: absolute;
+	left: -33px;
+	width: 25px;
+	padding-right: 5px;
+	white-space: pre-wrap;
+	direction: rtl;
+	overflow: hidden; }
+
+/* CSS Banners */
+.side .md > ol {
+	left: 0;
+	right: 0;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 162px;
+	width: 100%;
+	height: 37px;
+	line-height: 37px;
+	background: #fdfdfd;
+	color: #444;
+	font-weight: normal;
+	border-bottom: 1px solid #dcdcdc; }
+
+.side .md > ol li { display: inline-block; }
+
+.side .md > ol li > p {
+	margin: 0 10px 0 0!important;
+	text-align: left!important;
+	border: 0!important;
+	padding: 0!important; }
+
+.side .md > ol li a,
+.side .md > ol li strong a,
+.side .md > ol li em a {
+	color:#000;
+	font-style:normal;
+	position: relative;
+	font-size: 12px; }
+
+.side .md > ol li em a, .side .md > ol li:first-of-type { padding-left: 37px; }
+
+.side .md > ol li a { text-decoration: none; }
+
+.side .md > ol li a:before,
+.side .md > ol li strong a:before,
+.side .md > ol li em a:before {
+	color:#b93a43;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 2px 10px 1px 10px;
+	margin-right: 10px;
+	color: #fff;
+	border-radius: 3px;
+	border: 1px solid #fdfdfd;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+
+.side .md > ol li a:before { content: "NOTICE"; background: #EF6C00; outline: 1px solid #EF6C00; }
+.side .md > ol li strong a:before { content: "IMPORTANT"; background: #b93a43; outline: 1px solid #b93a43; }
+.side .md > ol li em a:before { content:"LIVE NOW"; background: #009688; outline: 1px solid #009688; }
+
+.side .md > ol li a:after,
+.side .md > ol li strong a:after {
+	position: absolute;
+	left: 10px;
+	width:22px;
+	height:37px;
+	content: "";
+	font-style:normal; }
+
+.side .md > ol li em a:after {
+	position: absolute;
+	top: -2px;
+	left: 10px;
+	font-style:normal;
+	width:20px;
+	height:20px;
+	background: red;
+	border-radius: 50%;
+	z-index: 1;
+	content: "";
+	-webkit-animation: live 2s ease-out;
+	   -moz-animation: live 2s ease-out;
+	        animation: live 2s ease-out;
+	-webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	opacity: 0; }
+
+@-moz-keyframes live {
+    0% { -moz-transform: scale(0.5); opacity: 0.5; }
+    25% { -moz-transform: scale(0.5); opacity: 0.5; }
+    50% { -moz-transform: scale(0.5); opacity: 0.5; }
+    75% { -moz-transform: scale(0.5); opacity: 0.5; }
+    100% { -moz-transform: scale(1); opacity: 0.0; } }
+
+@-webkit-keyframes "live" {
+    0% { -webkit-transform: scale(0); opacity: 0.0; }
+    25% { -webkit-transform: scale(0); opacity: 0.1; }
+    50% { -webkit-transform: scale(0.1); opacity: 0.3; }
+    75% { -webkit-transform: scale(0.5); opacity: 0.5; }
+    100% { -webkit-transform: scale(1); opacity: 0.0; } }
+
+/* Downvote warning for non-subscribers & fading of disliked links */
+.dislikes { opacity: .3 }
+.dislikes + a.thumbnail img,
+.dislikes + a.thumbnail { opacity: 0.4 }
+.dislikes div.score.dislikes { color: #000; }
+
+body:not(.subscriber) #siteTable:before {
+	content: "You are not a subscribed member of this community. Please respect that by not downvoting.";
+	display: block;
+	position: relative;
+	background-color: #FFEBEE;
+	line-height: 37px;
+	height: 37px;
+	padding-left: 37px;
+	margin: 5px 294px 5px 0px;
+	border: 1px solid #EF5350;
+	border-left: 0;
+	border-right: 0;
+	font-size: small; }
+
+/* Link Flair */
+.linkflairlabel {
+	display:block;
+	background-color: transparent;
+	font-size: 9px;
+	font-weight: bold;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 0px;
+	float: left;
+	max-width: 250px;
+	color: red;
+	font-size: 85% !important;
+	opacity: .4 }
+
+.flairoptionpane ul { line-height: 26px; text-align:left!important; }
+
+.flairselector a.title { display:none; }
+.flairselector { text-align: left!important; font-size: 12px; }
+
+.flairselector li:hover { background: #fff; }
+.flairselector .linkflairlabel { opacity:.9; background-color: white; text-align: left!important; }
+
+.flairoptionpane { margin-bottom: 4px; max-height: 700px; width: 700px; overflow: auto; text-align: center; }
+
+.flairselector .linkflair-usercreatedtitle .linkflairlabel,
+.flairselector .linkflair-mistakeintitle .linkflairlabel,
+.flairselector .linkflair-offtopic .linkflairlabel,
+.flairselector .linkflair-internationalpolitics .linkflairlabel,
+.flairselector .linkflair-rehostedcontent .linkflairlabel,
+.flairselector .linkflair-outofdate .linkflairlabel,
+.flairselector .linkflair-alreadysubmitted .linkflairlabel,
+.flairselector .linkflair-unacceptabledomain .linkflairlabel,
+.flairselector .linkflair-notappropriate .linkflairlabel,
+.flairselector .linkflair-404notfound .linkflairlabel,
+.flairselector .linkflair-spam .linkflairlabel,
+.flairselector .linkflair-paywall .linkflairlabel,
+.flairselector .linkflair-possiblywrong .linkflairlabel,
+.flairselector .linkflair-seemodcomment .linkflairlabel,
+.flairselector .linkflair-nobreakingcaps .linkflairlabel,
+.flairselector .linkflair-nolinkshortenerredirector .linkflairlabel,
+.flairselector .linkflair-nopetitionspolls .linkflairlabel,
+.flairselector .linkflair-nosatireimages .linkflairlabel,
+.flairselector .linkflair-meta .linkflairlabel { color: #000; font-weight: bold; min-width: 180px; }
+
+.flairselector .linkflair-nobreakingcaps .linkflairlabel,
+.flairselector .linkflair-nolinkshortenerredirector .linkflairlabel,
+.flairselector .linkflair-nopetitionspolls .linkflairlabel,
+.flairselector .linkflair-nosatireimages .linkflairlabel { background-color:#c1a2cc; opacity:.8; }
+
+.flairselector .linkflair-usercreatedtitle .linkflairlabel { background-color:#80acd2; }
+.flairselector .linkflair-mistakeintitle .linkflairlabel { background-color: #e7e67b; }
+.flairselector .linkflair-offtopic .linkflairlabel {background-color:#a1c143; }
+.flairselector .linkflair-internationalpolitics .linkflairlabel {background-color:#69d7cb; }
+.flairselector .linkflair-rehostedcontent .linkflairlabel {background-color:#dd6ba2; }
+.flairselector .linkflair-outofdate .linkflairlabel {background-color:#ec9a7d; }
+.flairselector .linkflair-alreadysubmitted .linkflairlabel {background-color:#ffc54b; }
+.flairselector .linkflair-unacceptabledomain .linkflairlabel {background-color:#e5e5e5; }
+.flairselector .linkflair-notappropriate .linkflairlabel {background-color:#e5e5e5; }
+.flairselector .linkflair-404notfound .linkflairlabel {background-color:#e5e5e5; }
+.flairselector .linkflair-spam .linkflairlabel {background-color:#e5e5e5; }
+.flairselector .linkflair-paywall .linkflairlabel {background-color:#e5e5e5; }
+.flairselector .linkflair-possiblywrong .linkflairlabel {background-color:#e5e5e5; }
+.flairselector .linkflair-seemodcomment .linkflairlabel {background-color:#e5e5e5; }
+.flairselector .linkflair-meta .linkflairlabel {background-color:#da6868; }
+
+/* res nightmode */
+.res-nightmode body, .res-nightmode body .content,
+.res-nightmode .comments-page .panestack-title,
+.res-nightmode .commentarea .menuarea,
+.res-nightmode .commentarea>.usertext,
+.res-nightmode .footer div.col .title { background-color: #2B303B!important; }
+.res-nightmode .side .md h2, .res-nightmode .side .md > ol { background: #272b35; border-bottom: 1px solid #232730; color: #fff; }
+.res-nightmode #header, .res-nightmode #header:after { background: #2B303B; border-color: #232730; }
+.res-nightmode #header-bottom-left ul.tabmenu li a { background: #2B303B; }
+.res-nightmode #sr-header-area, .res-nightmode #sr-more-link, .res-nightmode #RESConsoleTopBar, .res-nightmode .moduleHeader, .res-nightmode .allOptionsContainer, .res-nightmode .optionContainer { background: rgba(0,0,0,0.5)!important; }
+.res-nightmode .side .spacer > #search input { background-color: rgb(39, 43, 53)!important; border-color: #383d4c; }
+
+.res-nightmode .linklisting .link { background-color: rgba(24, 24, 24, 0.3); }
+.res-nightmode .linklisting .link .entry,
+.res-nightmode .linklisting .link .score, .res-nightmode .organic-listing .link.promotedlink .score { border-color: #3c4252; }
+.res-nightmode .link .score, .res-nightmode .link .score.likes, .res-nightmode .link .score.dislikes { color: #788195; }
+
+.res-nightmode .linklisting .link .arrow.up, .res-nightmode .organic-listing .link.promotedlink .arrow.up { background: url(%%politics-spritesheet%%) 0 0 no-repeat #2B303B!important; opacity: 0.3; }
+.res-nightmode .linklisting .link .arrow.down,
+.res-nightmode .organic-listing .link.promotedlink .arrow.down {
+background: url(%%politics-spritesheet%%) 0 0 no-repeat #2B303B!important; opacity: 0.3;
+	-webkit-transform: rotate(180deg);
+	   -moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		 -o-transform: rotate(180deg);
+			transform: rotate(180deg); }
+
+.res-nightmode .linklisting .link .arrow,
+.res-nightmode .organic-listing .link.promotedlink .arrow { margin: 0 10px; height: 20px!important; width: 20px!important; }
+
+.res-nightmode .linklisting .link .arrow.upmod,
+.res-nightmode .organic-listing .link.promotedlink .arrow.upmod { background: url(%%politics-spritesheet%%) 0 0 no-repeat #2B303B!important; opacity: 0.8; }
+
+.res-nightmode .linklisting .link .arrow.downmod,
+.res-nightmode .organic-listing .link.promotedlink .arrow.downmod {
+	background: url(%%politics-spritesheet%%) 0 0 no-repeat #2B303B!important; opacity: 0.8;
+	-webkit-transform: rotate(180deg);
+	   -moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		 -o-transform: rotate(180deg);
+			transform: rotate(180deg); }
+
+.res-nightmode .side {  border-top: 0; box-shadow: 0 0 0 1px #232730,0 1px 0 rgba(0,0,0,0.035); }
+.res-nightmode .sidebox { border: 0;  border-radius: 3px; width: 260px; margin: auto; background: #b93a43; }
+.res-nightmode .side a { color: #fff!important; }
+.res-nightmode .fancy-toggle-button>.option.remove,
+.res-nightmode .fancy-toggle-button>.option.remove:hover,
+.res-nightmode .fancy-toggle-button>.option.remove:focus,
+.res-nightmode .fancy-toggle-button>.option.remove:active,
+.res-nightmode .fancy-toggle-button>.option.add,
+.res-nightmode .fancy-toggle-button>.option.remove,
+.res-nightmode .res .RESshortcutside,
+.res-nightmode .res .RESshortcutside.remove,
+.res-nightmode .res .RESDashboardToggle,
+.res-nightmode .res .RESDashboardToggle.remove,
+.res-nightmode .side table tbody tr td:first-child { background: #3f3f3f; border-color: #535353; }
+
+.res-nightmode .fancy-toggle-button>.option.add, .res-nightmode .fancy-toggle-button>.option.remove, .res-nightmode .res .RESshortcutside, .res-nightmode .res .RESshortcutside.remove, .res-nightmode .res .RESDashboardToggle, .res-nightmode .res .RESDashboardToggle.remove, .res-nightmode .side table tbody tr td:first-child, .res-nightmode .side table tbody tr td:last-child, .res-nightmode .commentarea .menuarea .toggle a, .res-nightmode .dropdown.lightdrop .selected, .res-nightmode .footer div.col a  { color: #fff; }
+.res-nightmode .side table tbody tr, .res-nightmode .side .md table td:before, .res-nightmode .side .md p { border-color: #222; }
+.res-nightmode .thing .md blockquote { background: #222; color: #fff; }
+
+.res-nightmode .footer-parent { background: #272b35; border-color: #232730; }
+.res-nightmode .debuginfo { background: #2B303B; border-color: #232730; }
+
+/* Search page */
+.search-page #search { position: relative; top: 0; margin: 0; }
+.search-page #search input[type=text] { box-shadow: inset 0 0 0 rgba(0,0,0,.2); background: rgba(255,255,255,.7); }
+.search-page .searchpane { margin: 5px 296px 5px 0px; background-color: #E3F2FD; }
+.search-page .raisedbox { border: 1px solid #BBDEFB; border-left: 0; border-right: 0; }
+.search-page .debuginfo { background: transparent; border: 0; }
+
+/* report box */
+.action-form { background-color: #E3F2FD; border: thin solid #BBDEFB; }
+
+/* Ad space sidebar */
+.sponsorshipbox { max-width: 298px; }
+
+#ad_main, #ad_sponsorship {
+	-webkit-transform: scale(.98);
+	-webkit-transform-origin: 100%;
+	transform: scale(.98);
+	transform-origin: 100%;
+	margin-left: -4px; }
+
+/* Wiki styles */
+.wiki-page .wiki-page-content {
+	font-family: arial,verdana,helvetica,sans-serif;
+	margin: 0 296px 5px 20px;
+	padding: 10px 20px;
+	background: rgba(255,255,255,1);
+	border-bottom: 1px solid #dcdcdc;
+	-moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+	 -ms-box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+	  -o-box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+		 box-shadow: 0 1px 1px 0 rgba(0,0,0,.05); }
+
+.wiki-page .wikititle { display: none; }
+
+.wiki-page .pageactions {
+	padding: 5px 20px;
+	background: rgba(255,255,255,1);
+	border: 0;
+	margin: 0px 0px 0px 20px!important;
+	display: block!important;
+	overflow: auto; }
+
+.wiki-page .pageactions .wikiaction-current { background-color: #586698; }
+
+.wiki-page .wiki-page-content .md.wiki>.toc>ul {
+	padding: 10px 25px;
+	margin-right: 0;
+	color: #313E3E;
+	border: 1px solid #DADFE3;
+	background: #FAFBFC;
+	border-radius: 3px; }
+
+.wiki-page .wiki-page-content .md.wiki>.toc>ul a { color: #313E3E; }
+.wiki-page .wiki-page-content .md.wiki h1 { margin-top: 0; color: #2a3f4d; font-weight: normal; }
+.wiki-page .wiki-page-content .md.wiki h2, .wiki-page .wiki-page-content .md.wiki h4 {
+	font-size: 1.4em;
+	color: #586698;
+	padding: 5px 0;
+	font-weight: 600;
+	letter-spacing: -1px;
+	text-decoration: none;
+	border-bottom: 3px solid #b93a43; }
+
+.wiki-page hr {
+	margin: 10px 0;
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+/* Modtools */
+.icon-menu li { padding: 2px 2px 2px 10px; }
+.icon-menu li:hover { background: #fff; }
+.icon-menu a { font-size: 12px; line-height: 12px; vertical-align: text-top; padding-left: 5px; background: transparent; }
+.icon-menu .reddit-edit:before, .icon-menu .reddit-edit:hover:before, .icon-menu .moderator-mail:before, .icon-menu .moderator-mail:hover:before, .icon-menu .reddit-contributors:before, .icon-menu .reddit-contributors:hover:before, .icon-menu .reddit-moderators:before, .icon-menu .reddit-moderators:hover:before, .icon-menu .reddit-traffic:before, .icon-menu .reddit-traffic:hover:before, .icon-menu .reddit-modqueue:before, .icon-menu .reddit-modqueue:hover:before, .icon-menu .reddit-reported:before, .icon-menu .reddit-reported:hover:before, .icon-menu .reddit-spam:before, .icon-menu .reddit-spam:hover:before, .icon-menu .reddit-ban:before, .icon-menu .reddit-ban:hover:before, .icon-menu .reddit-flair:before, .icon-menu .reddit-flair:hover:before, .icon-menu .reddit-moderationlog:before, .icon-menu .reddit-moderationlog:hover:before, .icon-menu .reddit-unmoderated:before, .icon-menu .reddit-unmoderated:hover:before, .icon-menu .edit-stylesheet:before, .icon-menu .edit-stylesheet:hover:before, .icon-menu .reddit-edited:before, .icon-menu .reddit-edited:hover:before { 
+background: url(%%politics-modtools%%) no-repeat; width: 12px; height: 12px; }
+
+.icon-menu .reddit-edit:before { background-position: -36px -12px; margin-top: 2px; }
+.icon-menu .reddit-edit:hover:before { background-position: -48px -12px; }
+.icon-menu .moderator-mail:before { background-position: -24px 0; margin-top: 2px; margin-left: 0px; }
+.icon-menu .moderator-mail:hover:before { background-position: -36px 0; }
+.icon-menu .reddit-contributors:before { background-position: -12px -12px; margin-top: 2px; }
+.icon-menu .reddit-contributors:hover:before { background-position: -24px -12px; }
+.icon-menu .reddit-moderators:before { background-position: -12px -36px; margin-top: 2px; }
+.icon-menu .reddit-moderators:hover:before { background-position: -24px -36px; }
+.icon-menu .reddit-traffic:before { background-position: -48px -48px; margin-top: 2px; }
+.icon-menu .reddit-traffic:hover:before { background-position: -60px 0; }
+.icon-menu .reddit-modqueue:before { background-position: -36px -36px; margin-top: 2px; }
+.icon-menu .reddit-modqueue:hover:before { background-position: -48px -36px; }
+.icon-menu .reddit-reported:before { background-position: 0 -48px; margin-top: 2px; }
+.icon-menu .reddit-reported:hover:before { background-position: -12px -48px; }
+.icon-menu .reddit-spam:before { background-position: -24px -48px; margin-top: 2px; }
+.icon-menu .reddit-spam:hover:before { background-position: -36px -48px; }
+.icon-menu .reddit-ban:before { background-position: -48px 0; margin-top: 2px; }
+.icon-menu .reddit-ban:hover:before { background-position: 0 -12px; }
+.icon-menu .reddit-flair:before { background-position: -24px -24px; margin-top: 2px; }
+.icon-menu .reddit-flair:hover:before { background-position: -36px -24px; }
+.icon-menu .reddit-moderationlog:before { background-position: -48px -24px; margin-top: 2px; }
+.icon-menu .reddit-moderationlog:hover:before { background-position: 0 -36px; }
+.icon-menu .reddit-unmoderated:before { background-position: -60px -12px; margin-top: 2px; }
+.icon-menu .reddit-unmoderated:hover:before { background-position: -60px -24px; }
+.icon-menu .edit-stylesheet:before { background-position: 0 0; margin-top: 2px; }
+.icon-menu .edit-stylesheet:hover:before { background-position: -12px 0; }
+.icon-menu .reddit-edited:before { background-position: 0 -24px; margin-top: 2px; }
+.icon-menu .reddit-edited:hover:before { background-position: -12px -24px; }
